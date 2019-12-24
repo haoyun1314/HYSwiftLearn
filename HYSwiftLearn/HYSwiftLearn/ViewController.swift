@@ -375,7 +375,6 @@ class ViewController: UIViewController {
         // 2.不同类型的合并:不能相加
         var array5 = ["why", 18] as [Any]
         let array6 = [1.88, 60.5]
-
         // let array7 = array5 + array6
         for item in array6 {
             array5.append(item)
@@ -383,7 +382,60 @@ class ViewController: UIViewController {
         
         print(array5)
         // 注意:不建议数组中存放多种元素
-
+        
+        
+//        TODO:字典的运用
+        
+//        DictionaryT
+     
+        
+        //字面量
+//        responseMessages变量的类型被推断为[Int: String]。字典的键类型是Int，而字典的值类型是String。
+//        若要创建没有键值对的字典，请使用空字典文字([:])。
+        let responseMessages = [200: "OK",
+        403: "Access forbidden",
+        404: "File not found",
+        500: "Internal server error"]
+        
+        print(responseMessages);
+        
+        var hues = ["Heliotrope": 296, "Coral": 16, "Aquamarine": 156]
+        print(hues["Coral"])
+        // Prints "Optional(16)"
+        
+        
+//        当您为一个键赋值并且该键已经存在时，字典会覆盖现有的值。如果字典不包含键，则键和值将作为新的键-值对添加。
+//        这里，键“Coral”的值从16更新为18，并为键“Cerise”添加一个新的键-值对。
+        //没有这个键值默认为空
+         print(hues["Cerise"])
+          // Prints "nil"
+        
+        //添加了一个键值对
+        hues["Cerise"] = 300
+        print(hues["Cerise"])
+       //Prints "Optional(300)"
+        print(hues)
+                   
+//        If you assign nil as the value for the given key, the dictionary removes that key and its associated value.
+//        In the following example, the key-value pair for the key "Aquamarine" is removed from the dictionary by assigning nil to the key-based subscript.
+        hues["Aquamarine"] = nil
+        print(hues)
+    // Prints "["Coral": 18, "Heliotrope": 296, "Cerise": 330]
+                
+           let httpResponseCodes = [200, 403, 301]
+           for code in httpResponseCodes {
+               if let message = responseMessages[code] {
+                   print("Response \(code): \(message)")
+               } else {
+                   print("Unknown response \(code)")
+               }
+           }
+        
+        
+        
+        
+        
+        
         
     }
 
