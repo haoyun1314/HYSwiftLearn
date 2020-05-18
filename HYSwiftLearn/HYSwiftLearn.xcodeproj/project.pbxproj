@@ -18,6 +18,9 @@
 		0590B7B4247262C500092CAB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B3247262C500092CAB /* MessageViewController.swift */; };
 		0590B7B6247262D300092CAB /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B5247262D300092CAB /* DiscoverViewController.swift */; };
 		0590B7B8247262E900092CAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B7247262E900092CAB /* ProfileViewController.swift */; };
+		0590B7BB24726A3E00092CAB /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0590B7BA24726A3E00092CAB /* MainVCSettings.json */; };
+		0590B7BF24726EF500092CAB /* ReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7BE24726EF500092CAB /* ReleaseViewController.swift */; };
+		0590B7C324728BAE00092CAB /* CamptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7C224728BAE00092CAB /* CamptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		0590B7B3247262C500092CAB /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		0590B7B5247262D300092CAB /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		0590B7B7247262E900092CAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0590B7BA24726A3E00092CAB /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		0590B7BE24726EF500092CAB /* ReleaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseViewController.swift; sourceTree = "<group>"; };
+		0590B7C224728BAE00092CAB /* CamptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		055B061123B0A60B001D751B /* HYSwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				0590B7BC24726EB300092CAB /* Release */,
 				0590B7AE2472601200092CAB /* Prolifle */,
 				0590B7AD2472600000092CAB /* Discovery */,
 				0590B7AC24725FF600092CAB /* Message */,
@@ -140,6 +147,7 @@
 		0590B7A924725FD300092CAB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0590B7B924726A2900092CAB /* Resource */,
 				0590B7AF2472605800092CAB /* MainViewController.swift */,
 			);
 			path = Main;
@@ -175,6 +183,23 @@
 				0590B7B7247262E900092CAB /* ProfileViewController.swift */,
 			);
 			path = Prolifle;
+			sourceTree = "<group>";
+		};
+		0590B7B924726A2900092CAB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7BA24726A3E00092CAB /* MainVCSettings.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0590B7BC24726EB300092CAB /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7BE24726EF500092CAB /* ReleaseViewController.swift */,
+				0590B7C224728BAE00092CAB /* CamptureViewController.swift */,
+			);
+			path = Release;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +308,7 @@
 			files = (
 				055B061F23B0A60C001D751B /* LaunchScreen.storyboard in Resources */,
 				055B061C23B0A60C001D751B /* Assets.xcassets in Resources */,
+				0590B7BB24726A3E00092CAB /* MainVCSettings.json in Resources */,
 				055B061A23B0A60B001D751B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,11 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0590B7B8247262E900092CAB /* ProfileViewController.swift in Sources */,
+				0590B7BF24726EF500092CAB /* ReleaseViewController.swift in Sources */,
 				055B061323B0A60B001D751B /* AppDelegate.swift in Sources */,
 				0590B7B02472605800092CAB /* MainViewController.swift in Sources */,
 				0590B7B4247262C500092CAB /* MessageViewController.swift in Sources */,
 				0590B7B2247262B300092CAB /* HomeViewController.swift in Sources */,
 				0590B7B6247262D300092CAB /* DiscoverViewController.swift in Sources */,
+				0590B7C324728BAE00092CAB /* CamptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
