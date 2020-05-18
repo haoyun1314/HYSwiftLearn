@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		055B061323B0A60B001D751B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B061223B0A60B001D751B /* AppDelegate.swift */; };
-		055B061523B0A60B001D751B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B061423B0A60B001D751B /* SceneDelegate.swift */; };
-		055B061723B0A60B001D751B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B061623B0A60B001D751B /* ViewController.swift */; };
 		055B061A23B0A60B001D751B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055B061823B0A60B001D751B /* Main.storyboard */; };
 		055B061C23B0A60C001D751B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055B061B23B0A60C001D751B /* Assets.xcassets */; };
 		055B061F23B0A60C001D751B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055B061D23B0A60C001D751B /* LaunchScreen.storyboard */; };
 		055B062A23B0A60C001D751B /* HYSwiftLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B062923B0A60C001D751B /* HYSwiftLearnTests.swift */; };
 		055B063523B0A60C001D751B /* HYSwiftLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B063423B0A60C001D751B /* HYSwiftLearnUITests.swift */; };
+		0590B7B02472605800092CAB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7AF2472605800092CAB /* MainViewController.swift */; };
+		0590B7B2247262B300092CAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B1247262B300092CAB /* HomeViewController.swift */; };
+		0590B7B4247262C500092CAB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B3247262C500092CAB /* MessageViewController.swift */; };
+		0590B7B6247262D300092CAB /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B5247262D300092CAB /* DiscoverViewController.swift */; };
+		0590B7B8247262E900092CAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B7247262E900092CAB /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +40,6 @@
 /* Begin PBXFileReference section */
 		055B060F23B0A60B001D751B /* HYSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055B061223B0A60B001D751B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		055B061423B0A60B001D751B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		055B061623B0A60B001D751B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		055B061923B0A60B001D751B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		055B061B23B0A60C001D751B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		055B061E23B0A60C001D751B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		055B063023B0A60C001D751B /* HYSwiftLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYSwiftLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055B063423B0A60C001D751B /* HYSwiftLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYSwiftLearnUITests.swift; sourceTree = "<group>"; };
 		055B063623B0A60C001D751B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0590B7AF2472605800092CAB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0590B7B1247262B300092CAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0590B7B3247262C500092CAB /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		0590B7B5247262D300092CAB /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		0590B7B7247262E900092CAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		055B061123B0A60B001D751B /* HYSwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				0590B7AE2472601200092CAB /* Prolifle */,
+				0590B7AD2472600000092CAB /* Discovery */,
+				0590B7AC24725FF600092CAB /* Message */,
+				0590B7AB24725FEC00092CAB /* Home */,
+				0590B7A924725FD300092CAB /* Main */,
 				055B061223B0A60B001D751B /* AppDelegate.swift */,
-				055B061423B0A60B001D751B /* SceneDelegate.swift */,
-				055B061623B0A60B001D751B /* ViewController.swift */,
 				055B061823B0A60B001D751B /* Main.storyboard */,
 				055B061B23B0A60C001D751B /* Assets.xcassets */,
 				055B061D23B0A60C001D751B /* LaunchScreen.storyboard */,
@@ -126,6 +135,46 @@
 				055B063623B0A60C001D751B /* Info.plist */,
 			);
 			path = HYSwiftLearnUITests;
+			sourceTree = "<group>";
+		};
+		0590B7A924725FD300092CAB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7AF2472605800092CAB /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0590B7AB24725FEC00092CAB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7B1247262B300092CAB /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0590B7AC24725FF600092CAB /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7B3247262C500092CAB /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		0590B7AD2472600000092CAB /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7B5247262D300092CAB /* DiscoverViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		0590B7AE2472601200092CAB /* Prolifle */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7B7247262E900092CAB /* ProfileViewController.swift */,
+			);
+			path = Prolifle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				055B061723B0A60B001D751B /* ViewController.swift in Sources */,
+				0590B7B8247262E900092CAB /* ProfileViewController.swift in Sources */,
 				055B061323B0A60B001D751B /* AppDelegate.swift in Sources */,
-				055B061523B0A60B001D751B /* SceneDelegate.swift in Sources */,
+				0590B7B02472605800092CAB /* MainViewController.swift in Sources */,
+				0590B7B4247262C500092CAB /* MessageViewController.swift in Sources */,
+				0590B7B2247262B300092CAB /* HomeViewController.swift in Sources */,
+				0590B7B6247262D300092CAB /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,14 +487,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95ZHAFM82T;
+				DEVELOPMENT_TEAM = 47ED62RARV;
 				INFOPLIST_FILE = HYSwiftLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haoyun.HYSwiftLearn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suanshubang.math;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,14 +506,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95ZHAFM82T;
+				DEVELOPMENT_TEAM = 47ED62RARV;
 				INFOPLIST_FILE = HYSwiftLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haoyun.HYSwiftLearn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suanshubang.math;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
