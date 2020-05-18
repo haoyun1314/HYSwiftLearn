@@ -21,6 +21,8 @@
 		0590B7BB24726A3E00092CAB /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0590B7BA24726A3E00092CAB /* MainVCSettings.json */; };
 		0590B7BF24726EF500092CAB /* ReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7BE24726EF500092CAB /* ReleaseViewController.swift */; };
 		0590B7C324728BAE00092CAB /* CamptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7C224728BAE00092CAB /* CamptureViewController.swift */; };
+		0590B7C62472943B00092CAB /* CamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7C52472943B00092CAB /* CamButton.swift */; };
+		0590B7C82472B5EE00092CAB /* SwiftCamBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7C72472B5EE00092CAB /* SwiftCamBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		0590B7BA24726A3E00092CAB /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		0590B7BE24726EF500092CAB /* ReleaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseViewController.swift; sourceTree = "<group>"; };
 		0590B7C224728BAE00092CAB /* CamptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamptureViewController.swift; sourceTree = "<group>"; };
+		0590B7C52472943B00092CAB /* CamButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamButton.swift; sourceTree = "<group>"; };
+		0590B7C72472B5EE00092CAB /* SwiftCamBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCamBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,10 +200,20 @@
 		0590B7BC24726EB300092CAB /* Release */ = {
 			isa = PBXGroup;
 			children = (
+				0590B7C42472940000092CAB /* CamtrueToos */,
 				0590B7BE24726EF500092CAB /* ReleaseViewController.swift */,
 				0590B7C224728BAE00092CAB /* CamptureViewController.swift */,
 			);
 			path = Release;
+			sourceTree = "<group>";
+		};
+		0590B7C42472940000092CAB /* CamtrueToos */ = {
+			isa = PBXGroup;
+			children = (
+				0590B7C52472943B00092CAB /* CamButton.swift */,
+				0590B7C72472B5EE00092CAB /* SwiftCamBtn.swift */,
+			);
+			path = CamtrueToos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0590B7C62472943B00092CAB /* CamButton.swift in Sources */,
 				0590B7B8247262E900092CAB /* ProfileViewController.swift in Sources */,
 				0590B7BF24726EF500092CAB /* ReleaseViewController.swift in Sources */,
 				055B061323B0A60B001D751B /* AppDelegate.swift in Sources */,
+				0590B7C82472B5EE00092CAB /* SwiftCamBtn.swift in Sources */,
 				0590B7B02472605800092CAB /* MainViewController.swift in Sources */,
 				0590B7B4247262C500092CAB /* MessageViewController.swift in Sources */,
 				0590B7B2247262B300092CAB /* HomeViewController.swift in Sources */,
