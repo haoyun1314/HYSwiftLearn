@@ -8,9 +8,10 @@
 
 import UIKit
 
-class SwiftCamBtn: CamButton {
+class SwiftCamBtn: CamButton
+{
     private var circleBorder: CALayer!
-       private var innerCircle: UIView!
+    private var innerCircle: UIView!
        
        override init(frame: CGRect) {
            super.init(frame: frame)
@@ -52,6 +53,9 @@ class SwiftCamBtn: CamButton {
            }, completion: nil)
        }
        
+    
+    
+    
        public func shrinkButton() {
            UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
                self.innerCircle.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)

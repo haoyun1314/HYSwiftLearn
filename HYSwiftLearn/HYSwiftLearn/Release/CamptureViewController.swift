@@ -54,9 +54,7 @@ extension CamptureViewController
         camptureButton.delegate = self
         camptureButton .addTarget(self, action:#selector(camptureBtnClick), for: UIControl.Event.touchUpInside)
         self.view.addSubview(camptureButton)
-        
-        
-        
+                
     }
 }
 
@@ -70,9 +68,9 @@ extension CamptureViewController : CamButtonDelegate
      }
     
     @objc func camptureBtnClick() {
-         self.dismiss(animated:true) {
-             print("返回")
-         }
+//         self.dismiss(animated:true) {
+//             print("返回")
+//         }
      }
     
     
