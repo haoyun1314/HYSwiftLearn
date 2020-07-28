@@ -1,0 +1,1107 @@
+{\rtf1\ansi\ansicpg936\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset134 PingFangSC-Regular;
+\f3\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red38\green117\blue7;\red255\green255\blue255;\red0\green0\blue0;
+\red155\green35\blue147;\red11\green79\blue121;\red15\green104\blue160;\red28\green70\blue74;\red57\green0\blue160;
+\red50\green109\blue116;\red108\green54\blue169;\red196\green26\blue22;\red28\green0\blue207;\red38\green117\blue7;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c14771\c45953\c2591;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c0\c85000;
+\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c4477\c31152\c47474;\csgenericrgb\c5696\c40622\c62817;\csgenericrgb\c10981\c27276\c28869;\csgenericrgb\c22454\c0\c62803;
+\csgenericrgb\c19418\c42935\c45455;\csgenericrgb\c42190\c21278\c66379;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c14771\c45953\c2591\c35000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 //\cf4 \
+\cf2 //  OptionalChainingUsage.swift\cf4 \
+\cf2 //  OptionalChaining\cf4 \
+\cf2 //\cf4 \
+\cf2 //  Created by dyf on 2017/10/25.\cf4 \
+\cf2 //  Copyright \'a9 2017 dyf. All rights reserved.\cf4 \
+\cf2 //\cf4 \
+\
+
+\f1\b \cf5 import
+\f0\b0 \cf4  UIKit\
+\
+\cf2 //
+\f2 \'b1\'be\'d2\'b3\'b0\'fc\'ba\'ac\'c4\'da\'c8\'dd\'a3\'ba
+\f0 \cf4 \
+\cf2 //
+\f2 \'ca\'b9\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b4\'fa\'cc\'e6\'c7\'bf\'d6\'c6\'d5\'b9\'bf\'aa
+\f0 \cf4 \
+\cf2 //
+\f2 \'ce\'aa\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b6\'a8\'d2\'e5\'c4\'a3\'d0\'cd\'c0\'e0
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'ca\'f4\'d0\'d4
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'cf\'c2\'b1\'ea
+\f0 \cf4 \
+\cf2 //
+\f2 \'c1\'ac\'bd\'d3\'b6\'e0\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3
+\f0 \cf4 \
+\cf2 //
+\f2 \'d4\'da\'b7\'bd\'b7\'a8\'b5\'c4\'bf\'c9\'d1\'a1\'b7\'b5\'bb\'d8\'d6\'b5\'c9\'cf\'bd\'f8\'d0\'d0\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'ca\'c7\'d2\'bb\'d6\'d6\'bf\'c9\'d2\'d4\'d4\'da\'b5\'b1\'c7\'b0\'d6\'b5\'bf\'c9\'c4\'dc\'ce\'aa
+\f0 nil
+\f2 \'b5\'c4\'bf\'c9\'d1\'a1\'d6\'b5\'c9\'cf\'c7\'eb\'c7\'f3\'ba\'cd\'b5\'f7\'d3\'c3\'ca\'f4\'d0\'d4\'a1\'a2\'b7\'bd\'b7\'a8\'bc\'b0\'cf\'c2\'b1\'ea\'b5\'c4\'b7\'bd\'b7\'a8\'a1\'a3\'c8\'e7\'b9\'fb\'bf\'c9\'d1\'a1\'d6\'b5\'d3\'d0\'d6\'b5\'a3\'ac\'c4\'c7\'c3\'b4\'b5\'f7\'d3\'c3\'be\'cd\'bb\'e1\'b3\'c9\'b9\'a6\'a3\'bb\'c8\'e7\'b9\'fb\'bf\'c9\'d1\'a1\'d6\'b5\'ca\'c7
+\f0 nil
+\f2 \'a3\'ac\'c4\'c7\'c3\'b4\'b5\'f7\'d3\'c3\'bd\'ab\'b7\'b5\'bb\'d8
+\f0 nil
+\f2 \'a1\'a3\'b6\'e0\'b8\'f6\'b5\'f7\'d3\'c3\'bf\'c9\'d2\'d4\'c1\'ac\'bd\'d3\'d4\'da\'d2\'bb\'c6\'f0\'d0\'ce\'b3\'c9\'d2\'bb\'b8\'f6\'b5\'f7\'d3\'c3\'c1\'b4\'a3\'ac\'c8\'e7\'b9\'fb\'c6\'e4\'d6\'d0\'c8\'ce\'ba\'ce\'d2\'bb\'b8\'f6\'bd\'da\'b5\'e3\'ce\'aa
+\f0 nil
+\f2 \'a3\'ac\'d5\'fb\'b8\'f6\'b5\'f7\'d3\'c3\'c1\'b4\'b6\'bc\'bb\'e1\'ca\'a7\'b0\'dc\'a3\'ac\'bc\'b4\'b7\'b5\'bb\'d8
+\f0 nil
+\f2 \'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d7\'a2\'d2\'e2
+\f0 \cf4 \
+\cf2 //Swift 
+\f2 \'b5\'c4\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'ba\'cd
+\f0  Objective-C 
+\f2 \'d6\'d0\'cf\'f2
+\f0 nil
+\f2 \'b7\'a2\'cb\'cd\'cf\'fb\'cf\'a2\'d3\'d0\'d0\'a9\'cf\'e0\'cf\'f1\'a3\'ac\'b5\'ab\'ca\'c7
+\f0  Swift 
+\f2 \'b5\'c4\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'bf\'c9\'d2\'d4\'d3\'a6\'d3\'c3\'d3\'da\'c8\'ce\'d2\'e2\'c0\'e0\'d0\'cd\'a3\'ac\'b2\'a2\'c7\'d2\'c4\'dc\'bc\'ec\'b2\'e9\'b5\'f7\'d3\'c3\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6\'a1\'a3
+\f0 \cf4 \
+\
+\
+\
+\cf2 //
+\f2 \'ca\'b9\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b4\'fa\'cc\'e6\'c7\'bf\'d6\'c6\'d5\'b9\'bf\'aa
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'d4\'da\'cf\'eb\'b5\'f7\'d3\'c3\'b5\'c4\'ca\'f4\'d0\'d4\'a1\'a2\'b7\'bd\'b7\'a8\'a1\'a2\'bb\'f2\'cf\'c2\'b1\'ea\'b5\'c4\'bf\'c9\'d1\'a1\'d6\'b5\'ba\'f3\'c3\'e6\'b7\'c5\'d2\'bb\'b8\'f6\'ce\'ca\'ba\'c5\'a3\'a8
+\f0 ?
+\f2 \'a3\'a9\'a3\'ac\'bf\'c9\'d2\'d4\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'c1\'b4\'a1\'a3\'d5\'e2\'d2\'bb\'b5\'e3\'ba\'dc\'cf\'f1\'d4\'da\'bf\'c9\'d1\'a1\'d6\'b5\'ba\'f3\'c3\'e6\'b7\'c5\'d2\'bb\'b8\'f6\'cc\'be\'ba\'c5\'a3\'a8
+\f0 !
+\f2 \'a3\'a9\'c0\'b4\'c7\'bf\'d6\'c6\'d5\'b9\'bf\'aa\'cb\'fc\'b5\'c4\'d6\'b5\'a1\'a3\'cb\'fc\'c3\'c7\'b5\'c4\'d6\'f7\'d2\'aa\'c7\'f8\'b1\'f0\'d4\'da\'d3\'da\'b5\'b1\'bf\'c9\'d1\'a1\'d6\'b5\'ce\'aa\'bf\'d5\'ca\'b1\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'d6\'bb\'bb\'e1\'b5\'f7\'d3\'c3\'ca\'a7\'b0\'dc\'a3\'ac\'c8\'bb\'b6\'f8\'c7\'bf\'d6\'c6\'d5\'b9\'bf\'aa\'bd\'ab\'bb\'e1\'b4\'a5\'b7\'a2\'d4\'cb\'d0\'d0\'ca\'b1\'b4\'ed\'ce\'f3\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'ce\'aa\'c1\'cb\'b7\'b4\'d3\'b3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'bf\'c9\'d2\'d4\'d4\'da\'bf\'d5\'d6\'b5\'a3\'a8
+\f0 nil
+\f2 \'a3\'a9\'c9\'cf\'b5\'f7\'d3\'c3\'b5\'c4\'ca\'c2\'ca\'b5\'a3\'ac\'b2\'bb\'c2\'db\'d5\'e2\'b8\'f6\'b5\'f7\'d3\'c3\'b5\'c4\'ca\'f4\'d0\'d4\'a1\'a2\'b7\'bd\'b7\'a8\'bc\'b0\'cf\'c2\'b1\'ea\'b7\'b5\'bb\'d8\'b5\'c4\'d6\'b5\'ca\'c7\'b2\'bb\'ca\'c7\'bf\'c9\'d1\'a1\'d6\'b5\'a3\'ac\'cb\'fc\'b5\'c4\'b7\'b5\'bb\'d8\'bd\'e1\'b9\'fb\'b6\'bc\'ca\'c7\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'d6\'b5\'a1\'a3\'c4\'e3\'bf\'c9\'d2\'d4\'c0\'fb\'d3\'c3\'d5\'e2\'b8\'f6\'b7\'b5\'bb\'d8\'d6\'b5\'c0\'b4\'c5\'d0\'b6\'cf\'c4\'e3\'b5\'c4\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'ca\'c7\'b7\'f1\'b5\'f7\'d3\'c3\'b3\'c9\'b9\'a6\'a3\'ac\'c8\'e7\'b9\'fb\'b5\'f7\'d3\'c3\'d3\'d0\'b7\'b5\'bb\'d8\'d6\'b5\'d4\'f2\'cb\'b5\'c3\'f7\'b5\'f7\'d3\'c3\'b3\'c9\'b9\'a6\'a3\'ac\'b7\'b5\'bb\'d8
+\f0 nil
+\f2 \'d4\'f2\'cb\'b5\'c3\'f7\'b5\'f7\'d3\'c3\'ca\'a7\'b0\'dc\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'cc\'d8\'b1\'f0\'b5\'d8\'a3\'ac\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b5\'c4\'b7\'b5\'bb\'d8\'bd\'e1\'b9\'fb\'d3\'eb\'d4\'ad\'b1\'be\'b5\'c4\'b7\'b5\'bb\'d8\'bd\'e1\'b9\'fb\'be\'df\'d3\'d0\'cf\'e0\'cd\'ac\'b5\'c4\'c0\'e0\'d0\'cd\'a3\'ac\'b5\'ab\'ca\'c7\'b1\'bb\'b0\'fc\'d7\'b0\'b3\'c9\'c1\'cb\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'d6\'b5\'a1\'a3\'c0\'fd\'c8\'e7\'a3\'ac\'ca\'b9\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'ca\'f4\'d0\'d4\'a3\'ac\'b5\'b1\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b3\'c9\'b9\'a6\'ca\'b1\'a3\'ac\'c8\'e7\'b9\'fb\'ca\'f4\'d0\'d4\'d4\'ad\'b1\'be\'b5\'c4\'b7\'b5\'bb\'d8\'bd\'e1\'b9\'fb\'ca\'c7
+\f0 Int
+\f2 \'c0\'e0\'d0\'cd\'a3\'ac\'d4\'f2\'bb\'e1\'b1\'e4\'ce\'aa
+\f0 Int?
+\f2 \'c0\'e0\'d0\'cd\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'cf\'c2\'c3\'e6\'bc\'b8\'b6\'ce\'b4\'fa\'c2\'eb\'bd\'ab\'bd\'e2\'ca\'cd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'ba\'cd\'c7\'bf\'d6\'c6\'d5\'b9\'bf\'aa\'b5\'c4\'b2\'bb\'cd\'ac\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'ca\'d7\'cf\'c8\'b6\'a8\'d2\'e5\'c1\'bd\'b8\'f6\'c0\'e0
+\f0 Person
+\f2 \'ba\'cd
+\f0 Residence
+\f2 \'a3\'ba
+\f0 \cf4 \
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Person\cf4  \{\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 residence\cf4 : \cf8 Residence\cf4 ?\
+\}\
+\
+\cf2 //class Residence \{\cf4 \
+\cf2 //    var numberOfRooms = 1\cf4 \
+\cf2 //\}\cf4 \
+\
+\cf2 //
+\f2 \'ce\'aa\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b6\'a8\'d2\'e5\'c4\'a3\'d0\'cd\'c0\'e0
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'ca\'b9\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'bf\'c9\'d2\'d4\'b5\'f7\'d3\'c3\'b6\'e0\'b2\'e3\'ca\'f4\'d0\'d4\'a1\'a2\'b7\'bd\'b7\'a8\'ba\'cd\'cf\'c2\'b1\'ea\'a1\'a3\'d5\'e2\'d1\'f9\'bf\'c9\'d2\'d4\'d4\'da\'b8\'b4\'d4\'d3\'b5\'c4\'c4\'a3\'d0\'cd\'d6\'d0\'cf\'f2\'cf\'c2\'b7\'c3\'ce\'ca\'b8\'f7\'d6\'d6\'d7\'d3\'ca\'f4\'d0\'d4\'a3\'ac\'b2\'a2\'c7\'d2\'c5\'d0\'b6\'cf\'c4\'dc\'b7\'f1\'b7\'c3\'ce\'ca\'d7\'d3\'ca\'f4\'d0\'d4\'b5\'c4\'ca\'f4\'d0\'d4\'a1\'a2\'b7\'bd\'b7\'a8\'bb\'f2\'cf\'c2\'b1\'ea\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'cf\'c2\'c3\'e6\'d5\'e2\'b6\'ce\'b4\'fa\'c2\'eb\'b6\'a8\'d2\'e5\'c1\'cb\'cb\'c4\'b8\'f6\'c4\'a3\'d0\'cd\'c0\'e0\'a3\'ac\'d5\'e2\'d0\'a9\'c0\'fd\'d7\'d3\'b0\'fc\'c0\'a8\'b6\'e0\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a1\'a3\'ce\'aa\'c1\'cb\'b7\'bd\'b1\'e3\'cb\'b5\'c3\'f7\'a3\'ac\'d4\'da
+\f0 Person
+\f2 \'ba\'cd
+\f0 Residence
+\f2 \'b5\'c4\'bb\'f9\'b4\'a1\'c9\'cf\'d4\'f6\'bc\'d3\'c1\'cb
+\f0 Room
+\f2 \'c0\'e0\'ba\'cd
+\f0 Address
+\f2 \'c0\'e0\'a3\'ac\'d2\'d4\'bc\'b0\'cf\'e0\'b9\'d8\'b5\'c4\'ca\'f4\'d0\'d4\'a1\'a2\'b7\'bd\'b7\'a8\'d2\'d4\'bc\'b0\'cf\'c2\'b1\'ea\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //Person
+\f2 \'c0\'e0\'b5\'c4\'b6\'a8\'d2\'e5\'bb\'f9\'b1\'be\'b1\'a3\'b3\'d6\'b2\'bb\'b1\'e4\'a3\'ba
+\f0 \cf4 \
+\
+\cf2 //class Person \{\cf4 \
+\cf2 //    var residence: Residence?\cf4 \
+\cf2 //\}\cf4 \
+\
+\cf2 //Residence
+\f2 \'c0\'e0\'b1\'c8\'d6\'ae\'c7\'b0\'b8\'b4\'d4\'d3\'d0\'a9\'a3\'ac\'d4\'f6\'bc\'d3\'c1\'cb\'d2\'bb\'b8\'f6\'c3\'fb\'ce\'aa
+\f0 rooms
+\f2 \'b5\'c4\'b1\'e4\'c1\'bf\'ca\'f4\'d0\'d4\'a3\'ac\'b8\'c3\'ca\'f4\'d0\'d4\'b1\'bb\'b3\'f5\'ca\'bc\'bb\'af\'ce\'aa
+\f0 [Room]
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'bf\'d5\'ca\'fd\'d7\'e9\'a3\'ba
+\f0 \cf4 \
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Residence\cf4  \{\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 rooms\cf4  = [\cf8 Room\cf4 ]()\
+    \
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 numberOfRooms\cf4 : \cf9 Int\cf4  \{\
+        
+\f1\b \cf5 return
+\f0\b0 \cf4  \cf10 rooms\cf4 .\cf11 count\cf4 \
+    \}\
+    \
+    
+\f1\b \cf5 subscript
+\f0\b0 \cf4 (i: \cf9 Int\cf4 ) -> \cf8 Room\cf4  \{\
+        
+\f1\b \cf5 get
+\f0\b0 \cf4  \{\
+            
+\f1\b \cf5 return
+\f0\b0 \cf4  \cf10 rooms\cf4 [i]\
+        \}\
+        
+\f1\b \cf5 set
+\f0\b0 \cf4  \{\
+            \cf10 rooms\cf4 [i] = newValue\
+        \}\
+    \}\
+    \
+    
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf7 printNumberOfRooms\cf4 () \{\
+        \cf11 print\cf4 (\cf12 "The number of rooms is \cf4 \\(\cf10 numberOfRooms\cf4 )\cf12 "\cf4 )\
+    \}\
+    \
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 address\cf4 : \cf8 Address\cf4 ?\
+\}\
+\
+\cf2 //
+\f2 \'cf\'d6\'d4\'da
+\f0 Residence
+\f2 \'d3\'d0\'c1\'cb\'d2\'bb\'b8\'f6\'b4\'e6\'b4\'a2
+\f0 Room
+\f2 \'ca\'b5\'c0\'fd\'b5\'c4\'ca\'fd\'d7\'e9\'a3\'ac
+\f0 numberOfRooms
+\f2 \'ca\'f4\'d0\'d4\'b1\'bb\'ca\'b5\'cf\'d6\'ce\'aa\'bc\'c6\'cb\'e3\'d0\'cd\'ca\'f4\'d0\'d4\'a3\'ac\'b6\'f8\'b2\'bb\'ca\'c7\'b4\'e6\'b4\'a2\'d0\'cd\'ca\'f4\'d0\'d4\'a1\'a3
+\f0 numberOfRooms
+\f2 \'ca\'f4\'d0\'d4\'bc\'f2\'b5\'a5\'b5\'d8\'b7\'b5\'bb\'d8
+\f0 rooms
+\f2 \'ca\'fd\'d7\'e9\'b5\'c4
+\f0 count
+\f2 \'ca\'f4\'d0\'d4\'b5\'c4\'d6\'b5\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //Residence
+\f2 \'bb\'b9\'cc\'e1\'b9\'a9\'c1\'cb\'b7\'c3\'ce\'ca
+\f0 rooms
+\f2 \'ca\'fd\'d7\'e9\'b5\'c4\'bf\'ec\'bd\'dd\'b7\'bd\'ca\'bd\'a3\'ac\'bc\'b4\'cc\'e1\'b9\'a9\'bf\'c9\'b6\'c1\'d0\'b4\'b5\'c4\'cf\'c2\'b1\'ea\'c0\'b4\'b7\'c3\'ce\'ca
+\f0 rooms
+\f2 \'ca\'fd\'d7\'e9\'d6\'d0\'d6\'b8\'b6\'a8\'ce\'bb\'d6\'c3\'b5\'c4\'d4\'aa\'cb\'d8\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'b4\'cb\'cd\'e2\'a3\'ac
+\f0 Residence
+\f2 \'bb\'b9\'cc\'e1\'b9\'a9\'c1\'cb
+\f0 printNumberOfRooms
+\f2 \'b7\'bd\'b7\'a8\'a3\'ac\'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'b5\'c4\'d7\'f7\'d3\'c3\'ca\'c7\'b4\'f2\'d3\'a1
+\f0 numberOfRooms
+\f2 \'b5\'c4\'d6\'b5\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d7\'ee\'ba\'f3\'a3\'ac
+\f0 Residence
+\f2 \'bb\'b9\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'ca\'f4\'d0\'d4
+\f0 address
+\f2 \'a3\'ac\'c6\'e4\'c0\'e0\'d0\'cd\'ce\'aa
+\f0 Address?
+\f2 \'a1\'a3
+\f0 Address
+\f2 \'c0\'e0\'b5\'c4\'b6\'a8\'d2\'e5\'d4\'da\'cf\'c2\'c3\'e6\'bb\'e1\'cb\'b5\'c3\'f7\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //Room
+\f2 \'c0\'e0\'ca\'c7\'d2\'bb\'b8\'f6\'bc\'f2\'b5\'a5\'c0\'e0\'a3\'ac\'c6\'e4\'ca\'b5\'c0\'fd\'b1\'bb\'b4\'e6\'b4\'a2\'d4\'da
+\f0 rooms
+\f2 \'ca\'fd\'d7\'e9\'d6\'d0\'a1\'a3\'b8\'c3\'c0\'e0\'d6\'bb\'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6\'ca\'f4\'d0\'d4
+\f0 name
+\f2 \'a3\'ac\'d2\'d4\'bc\'b0\'d2\'bb\'b8\'f6\'d3\'c3\'d3\'da\'bd\'ab\'b8\'c3\'ca\'f4\'d0\'d4\'c9\'e8\'d6\'c3\'ce\'aa\'ca\'ca\'b5\'b1\'b5\'c4\'b7\'bf\'bc\'e4\'c3\'fb\'b5\'c4\'b3\'f5\'ca\'bc\'bb\'af\'ba\'af\'ca\'fd\'a3\'ba
+\f0 \cf4 \
+\
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Room\cf4  \{\
+    
+\f1\b \cf5 let
+\f0\b0 \cf4  \cf7 name\cf4 : \cf9 String\cf4 \
+    
+\f1\b \cf5 init
+\f0\b0 \cf4 (name: \cf9 String\cf4 ) \{ 
+\f1\b \cf5 self
+\f0\b0 \cf4 .\cf10 name\cf4  = name \}\
+\}\
+\
+\cf2 //
+\f2 \'d7\'ee\'ba\'f3\'d2\'bb\'b8\'f6\'c0\'e0\'ca\'c7
+\f0 Address
+\f2 \'a3\'ac\'d5\'e2\'b8\'f6\'c0\'e0\'d3\'d0\'c8\'fd\'b8\'f6
+\f0 String?
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'bf\'c9\'d1\'a1\'ca\'f4\'d0\'d4\'a1\'a3
+\f0 buildingName
+\f2 \'d2\'d4\'bc\'b0
+\f0 buildingNumber
+\f2 \'ca\'f4\'d0\'d4\'b7\'d6\'b1\'f0\'b1\'ed\'ca\'be\'c4\'b3\'b8\'f6\'b4\'f3\'cf\'c3\'b5\'c4\'c3\'fb\'b3\'c6\'ba\'cd\'ba\'c5\'c2\'eb\'a3\'ac\'b5\'da\'c8\'fd\'b8\'f6\'ca\'f4\'d0\'d4
+\f0 street
+\f2 \'b1\'ed\'ca\'be\'b4\'f3\'cf\'c3\'cb\'f9\'d4\'da\'bd\'d6\'b5\'c0\'b5\'c4\'c3\'fb\'b3\'c6\'a3\'ba
+\f0 \cf4 \
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Address\cf4  \{\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 buildingName\cf4 : \cf9 String\cf4 ?\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 buildingNumber\cf4 : \cf9 String\cf4 ?\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 street\cf4 : \cf9 String\cf4 ?\
+    
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf7 buildingIdentifier\cf4 () -> \cf9 String\cf4 ? \{\
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  defaultValue = \cf12 ""\cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  \cf10 buildingName\cf4  \cf11 !=\cf4  
+\f1\b \cf5 nil
+\f0\b0 \cf4  \{\
+            
+\f1\b \cf5 return
+\f0\b0 \cf4  \cf10 buildingName\cf4 \
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  
+\f1\b \cf5 if
+\f0\b0 \cf4  \cf10 buildingNumber\cf4  \cf11 !=\cf4  
+\f1\b \cf5 nil
+\f0\b0 \cf4  \cf11 &&\cf4  \cf10 street\cf4  \cf11 !=\cf4  
+\f1\b \cf5 nil
+\f0\b0 \cf4  \{\
+            
+\f1\b \cf5 return
+\f0\b0 \cf4  \cf12 "\cf4 \\(\cf10 buildingNumber\cf4  ?? defaultValue)\cf12  \cf4 \\(\cf10 street\cf4  ?? defaultValue)\cf12 "\cf4 \
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            
+\f1\b \cf5 return
+\f0\b0 \cf4  
+\f1\b \cf5 nil
+\f0\b0 \cf4 \
+        \}\
+    \}\
+\}\
+\
+\cf2 //Address
+\f2 \'c0\'e0\'cc\'e1\'b9\'a9\'c1\'cb
+\f0 buildingIdentifier()
+\f2 \'b7\'bd\'b7\'a8\'a3\'ac\'b7\'b5\'bb\'d8\'d6\'b5\'ce\'aa
+\f0 String?
+\f2 \'a1\'a3
+\f0  
+\f2 \'c8\'e7\'b9\'fb
+\f0 buildingName
+\f2 \'d3\'d0\'d6\'b5\'d4\'f2\'b7\'b5\'bb\'d8
+\f0 buildingName
+\f2 \'a1\'a3\'bb\'f2\'d5\'df\'a3\'ac\'c8\'e7\'b9\'fb
+\f0 buildingNumber
+\f2 \'ba\'cd
+\f0 street
+\f2 \'be\'f9\'d3\'d0\'d6\'b5\'d4\'f2\'b7\'b5\'bb\'d8
+\f0 buildingNumber
+\f2 \'a1\'a3\'b7\'f1\'d4\'f2\'a3\'ac\'b7\'b5\'bb\'d8
+\f0 nil
+\f2 \'a1\'a3
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'ca\'f4\'d0\'d4
+\f0 \cf4 \
+\cf2 //
+\f2 \'d5\'fd\'c8\'e7\'ca\'b9\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b4\'fa\'cc\'e6\'c7\'bf\'d6\'c6\'d5\'b9\'bf\'aa\'d6\'d0\'cb\'f9\'ca\'f6\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'d4\'da\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'d6\'b5\'c9\'cf\'b7\'c3\'ce\'ca\'cb\'fc\'b5\'c4\'ca\'f4\'d0\'d4\'a3\'ac\'b2\'a2\'c5\'d0\'b6\'cf\'b7\'c3\'ce\'ca\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6\'a1\'a3
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8
+\f0 \cf4 \
+\cf2 //
+\f2 \'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8\'a3\'ac\'b2\'a2\'c5\'d0\'b6\'cf\'ca\'c7\'b7\'f1\'b5\'f7\'d3\'c3\'b3\'c9\'b9\'a6\'a3\'ac\'bc\'b4\'ca\'b9\'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'c3\'bb\'d3\'d0\'b7\'b5\'bb\'d8\'d6\'b5\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //Residence
+\f2 \'c0\'e0\'d6\'d0\'b5\'c4
+\f0 printNumberOfRooms()
+\f2 \'b7\'bd\'b7\'a8\'b4\'f2\'d3\'a1\'b5\'b1\'c7\'b0\'b5\'c4
+\f0 numberOfRooms
+\f2 \'d6\'b5\'a3\'ac\'c8\'e7\'cf\'c2\'cb\'f9\'ca\'be\'a3\'ba
+\f0 \cf4 \
+\
+\cf2 //func printNumberOfRooms() \{\cf4 \
+\cf2 //    print("The number of rooms is \\(numberOfRooms)")\cf4 \
+\cf2 //\}\cf4 \
+\
+\cf2 //
+\f2 \'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'c3\'bb\'d3\'d0\'b7\'b5\'bb\'d8\'d6\'b5\'a1\'a3\'c8\'bb\'b6\'f8\'a3\'ac\'c3\'bb\'d3\'d0\'b7\'b5\'bb\'d8\'d6\'b5\'b5\'c4\'b7\'bd\'b7\'a8\'be\'df\'d3\'d0\'d2\'fe\'ca\'bd\'b5\'c4\'b7\'b5\'bb\'d8\'c0\'e0\'d0\'cd
+\f0 Void
+\f2 \'a3\'ac\'c8\'e7\'ce\'de\'b7\'b5\'bb\'d8\'d6\'b5\'ba\'af\'ca\'fd\'d6\'d0\'cb\'f9\'ca\'f6\'a1\'a3\'d5\'e2\'d2\'e2\'ce\'b6\'d7\'c5\'c3\'bb\'d3\'d0\'b7\'b5\'bb\'d8\'d6\'b5\'b5\'c4\'b7\'bd\'b7\'a8\'d2\'b2\'bb\'e1\'b7\'b5\'bb\'d8
+\f0 ()
+\f2 \'a3\'ac\'bb\'f2\'d5\'df\'cb\'b5\'bf\'d5\'b5\'c4\'d4\'aa\'d7\'e9\'a1\'a3
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'cf\'c2\'b1\'ea
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a3\'ac\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'d4\'da\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'d6\'b5\'c9\'cf\'b7\'c3\'ce\'ca\'cf\'c2\'b1\'ea\'a3\'ac\'b2\'a2\'c7\'d2\'c5\'d0\'b6\'cf\'cf\'c2\'b1\'ea\'b5\'f7\'d3\'c3\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d7\'a2\'d2\'e2
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'bf\'c9\'d1\'a1\'d6\'b5\'b5\'c4\'cf\'c2\'b1\'ea\'ca\'b1\'a3\'ac\'d3\'a6\'b8\'c3\'bd\'ab\'ce\'ca\'ba\'c5\'b7\'c5\'d4\'da\'cf\'c2\'b1\'ea\'b7\'bd\'c0\'a8\'ba\'c5\'b5\'c4\'c7\'b0\'c3\'e6\'b6\'f8\'b2\'bb\'ca\'c7\'ba\'f3\'c3\'e6\'a1\'a3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b5\'c4\'ce\'ca\'ba\'c5\'d2\'bb\'b0\'e3\'d6\'b1\'bd\'d3\'b8\'fa\'d4\'da\'bf\'c9\'d1\'a1\'b1\'ed\'b4\'ef\'ca\'bd\'b5\'c4\'ba\'f3\'c3\'e6\'a1\'a3
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'b7\'c3\'ce\'ca\'bf\'c9\'d1\'a1\'c0\'e0\'d0\'cd\'b5\'c4\'cf\'c2\'b1\'ea
+\f0 \cf4 \
+\cf2 //
+\f2 \'c8\'e7\'b9\'fb\'cf\'c2\'b1\'ea\'b7\'b5\'bb\'d8\'bf\'c9\'d1\'a1\'c0\'e0\'d0\'cd\'d6\'b5\'a3\'ac\'b1\'c8\'c8\'e7
+\f0  Swift 
+\f2 \'d6\'d0
+\f0 Dictionary
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'bc\'fc\'b5\'c4\'cf\'c2\'b1\'ea\'a3\'ac\'bf\'c9\'d2\'d4\'d4\'da\'cf\'c2\'b1\'ea\'b5\'c4\'bd\'e1\'ce\'b2\'c0\'a8\'ba\'c5\'ba\'f3\'c3\'e6\'b7\'c5\'d2\'bb\'b8\'f6\'ce\'ca\'ba\'c5\'c0\'b4\'d4\'da\'c6\'e4\'bf\'c9\'d1\'a1\'b7\'b5\'bb\'d8\'d6\'b5\'c9\'cf\'bd\'f8\'d0\'d0\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a3\'ba
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'c1\'ac\'bd\'d3\'b6\'e0\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3
+\f0 \cf4 \
+\cf2 //
+\f2 \'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'c1\'ac\'bd\'d3\'b6\'e0\'b8\'f6\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'d4\'da\'b8\'fc\'c9\'ee\'b5\'c4\'c4\'a3\'d0\'cd\'b2\'e3\'bc\'b6\'d6\'d0\'b7\'c3\'ce\'ca\'ca\'f4\'d0\'d4\'a1\'a2\'b7\'bd\'b7\'a8\'d2\'d4\'bc\'b0\'cf\'c2\'b1\'ea\'a1\'a3\'c8\'bb\'b6\'f8\'a3\'ac\'b6\'e0\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b2\'bb\'bb\'e1\'d4\'f6\'bc\'d3\'b7\'b5\'bb\'d8\'d6\'b5\'b5\'c4\'bf\'c9\'d1\'a1\'b2\'e3\'bc\'b6\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d2\'b2\'be\'cd\'ca\'c7\'cb\'b5\'a3\'ba
+\f0 \cf4 \
+\cf2 //
+\f2 \'c8\'e7\'b9\'fb\'c4\'e3\'b7\'c3\'ce\'ca\'b5\'c4\'d6\'b5\'b2\'bb\'ca\'c7\'bf\'c9\'d1\'a1\'b5\'c4\'a3\'ac\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'bd\'ab\'bb\'e1\'b7\'b5\'bb\'d8\'bf\'c9\'d1\'a1\'d6\'b5\'a1\'a3
+\f0 \cf4 \
+\cf2 //
+\f2 \'c8\'e7\'b9\'fb\'c4\'e3\'b7\'c3\'ce\'ca\'b5\'c4\'d6\'b5\'be\'cd\'ca\'c7\'bf\'c9\'d1\'a1\'b5\'c4\'a3\'ac\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b2\'bb\'bb\'e1\'c8\'c3\'bf\'c9\'d1\'a1\'b7\'b5\'bb\'d8\'d6\'b5\'b1\'e4\'b5\'c3
+\f0 \'93
+\f2 \'b8\'fc\'bf\'c9\'d1\'a1
+\f0 \'94
+\f2 \'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d2\'f2\'b4\'cb\'a3\'ba
+\f0 \cf4 \
+\cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'d2\'bb\'b8\'f6
+\f0 Int
+\f2 \'d6\'b5\'a3\'ac\'bd\'ab\'bb\'e1\'b7\'b5\'bb\'d8
+\f0 Int?
+\f2 \'a3\'ac\'ce\'de\'c2\'db\'ca\'b9\'d3\'c3\'c1\'cb\'b6\'e0\'c9\'d9\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a1\'a3
+\f0 \cf4 \
+\cf2 //
+\f2 \'c0\'e0\'cb\'c6\'b5\'c4\'a3\'ac\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca
+\f0 Int?
+\f2 \'d6\'b5\'a3\'ac\'d2\'c0\'be\'c9\'bb\'e1\'b7\'b5\'bb\'d8
+\f0 Int?
+\f2 \'d6\'b5\'a3\'ac\'b2\'a2\'b2\'bb\'bb\'e1\'b7\'b5\'bb\'d8
+\f0 Int??
+\f2 \'a1\'a3
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'d4\'da\'b7\'bd\'b7\'a8\'b5\'c4\'bf\'c9\'d1\'a1\'b7\'b5\'bb\'d8\'d6\'b5\'c9\'cf\'bd\'f8\'d0\'d0\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3
+\f0 \cf4 \
+\cf2 //
+\f2 \'c9\'cf\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'d5\'b9\'ca\'be\'c1\'cb\'c8\'e7\'ba\'ce\'d4\'da\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'d6\'b5\'c9\'cf\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'bb\'f1\'c8\'a1\'cb\'fc\'b5\'c4\'ca\'f4\'d0\'d4\'d6\'b5\'a1\'a3\'ce\'d2\'c3\'c7\'bb\'b9\'bf\'c9\'d2\'d4\'d4\'da\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'d6\'b5\'c9\'cf\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8\'a3\'ac\'b2\'a2\'c7\'d2\'bf\'c9\'d2\'d4\'b8\'f9\'be\'dd\'d0\'e8\'d2\'aa\'bc\'cc\'d0\'f8\'d4\'da\'b7\'bd\'b7\'a8\'b5\'c4\'bf\'c9\'d1\'a1\'b7\'b5\'bb\'d8\'d6\'b5\'c9\'cf\'bd\'f8\'d0\'d0\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a1\'a3
+\f0 \cf4 \
+\
+\
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 OptionalChainingUsage\cf4 : \cf9 NSObject\cf4  \{\
+    \
+    
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf7 execute\cf4 () \{\
+        \cf2 //Residence
+\f2 \'d3\'d0\'d2\'bb\'b8\'f6
+\f0 Int
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'ca\'f4\'d0\'d4
+\f0 numberOfRooms
+\f2 \'a3\'ac\'c6\'e4\'c4\'ac\'c8\'cf\'d6\'b5\'ce\'aa
+\f0 1
+\f2 \'a1\'a3
+\f0 Person
+\f2 \'be\'df\'d3\'d0\'d2\'bb\'b8\'f6\'bf\'c9\'d1\'a1\'b5\'c4
+\f0 residence
+\f2 \'ca\'f4\'d0\'d4\'a3\'ac\'c6\'e4\'c0\'e0\'d0\'cd\'ce\'aa
+\f0 Residence?
+\f2 \'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'bc\'d9\'c8\'e7\'c4\'e3\'b4\'b4\'bd\'a8\'c1\'cb\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4
+\f0 Person
+\f2 \'ca\'b5\'c0\'fd
+\f0 ,
+\f2 \'cb\'fc\'b5\'c4
+\f0 residence
+\f2 \'ca\'f4\'d0\'d4\'d3\'c9\'d3\'da\'ca\'c7\'ca\'c7\'bf\'c9\'d1\'a1\'d0\'cd\'b6\'f8\'bd\'ab\'b3\'f5\'ca\'bc\'bb\'af\'ce\'aa
+\f0 nil,
+\f2 \'d4\'da\'cf\'c2\'c3\'e6\'b5\'c4\'b4\'fa\'c2\'eb\'d6\'d0
+\f0 ,john
+\f2 \'d3\'d0\'d2\'bb\'b8\'f6\'d6\'b5\'ce\'aa
+\f0 nil
+\f2 \'b5\'c4
+\f0 residence
+\f2 \'ca\'f4\'d0\'d4\'a3\'ba
+\f0 \cf4 \
+        \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  john = \cf8 Person\cf4 ()\
+        \cf2 //
+\f2 \'c8\'e7\'b9\'fb\'ca\'b9\'d3\'c3\'cc\'be\'ba\'c5\'a3\'a8
+\f0 !
+\f2 \'a3\'a9\'c7\'bf\'d6\'c6\'d5\'b9\'bf\'aa\'bb\'f1\'b5\'c3\'d5\'e2\'b8\'f6
+\f0 john
+\f2 \'b5\'c4
+\f0 residence
+\f2 \'ca\'f4\'d0\'d4\'d6\'d0\'b5\'c4
+\f0 numberOfRooms
+\f2 \'d6\'b5\'a3\'ac\'bb\'e1\'b4\'a5\'b7\'a2\'d4\'cb\'d0\'d0\'ca\'b1\'b4\'ed\'ce\'f3\'a3\'ac\'d2\'f2\'ce\'aa\'d5\'e2\'ca\'b1
+\f0 residence
+\f2 \'c3\'bb\'d3\'d0\'bf\'c9\'d2\'d4\'d5\'b9\'bf\'aa\'b5\'c4\'d6\'b5\'a3\'ba
+\f0 \cf4 \
+        \
+        \cf2 //let roomCount = john.residence!.numberOfRooms\cf4 \
+        \cf2 // 
+\f2 \'d5\'e2\'bb\'e1\'d2\'fd\'b7\'a2\'d4\'cb\'d0\'d0\'ca\'b1\'b4\'ed\'ce\'f3
+\f0 \cf4 \
+        \cf2 //john.residence
+\f2 \'ce\'aa\'b7\'c7
+\f0 nil
+\f2 \'d6\'b5\'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac\'c9\'cf\'c3\'e6\'b5\'c4\'b5\'f7\'d3\'c3\'bb\'e1\'b3\'c9\'b9\'a6\'a3\'ac\'b2\'a2\'c7\'d2\'b0\'d1
+\f0 roomCount
+\f2 \'c9\'e8\'d6\'c3\'ce\'aa
+\f0 Int
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'b7\'bf\'bc\'e4\'ca\'fd\'c1\'bf\'a1\'a3\'d5\'fd\'c8\'e7\'c9\'cf\'c3\'e6\'cc\'e1\'b5\'bd\'b5\'c4\'a3\'ac\'b5\'b1
+\f0 residence
+\f2 \'ce\'aa
+\f0 nil
+\f2 \'b5\'c4\'ca\'b1\'ba\'f2\'c9\'cf\'c3\'e6\'d5\'e2\'b6\'ce\'b4\'fa\'c2\'eb\'bb\'e1\'b4\'a5\'b7\'a2\'d4\'cb\'d0\'d0\'ca\'b1\'b4\'ed\'ce\'f3\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'cc\'e1\'b9\'a9\'c1\'cb\'c1\'ed\'d2\'bb\'d6\'d6\'b7\'c3\'ce\'ca
+\f0 numberOfRooms
+\f2 \'b5\'c4\'b7\'bd\'ca\'bd\'a3\'ac\'ca\'b9\'d3\'c3\'ce\'ca\'ba\'c5\'a3\'a8
+\f0 ?
+\f2 \'a3\'a9\'c0\'b4\'cc\'e6\'b4\'fa\'d4\'ad\'c0\'b4\'b5\'c4\'cc\'be\'ba\'c5\'a3\'a8
+\f0 !
+\f2 \'a3\'a9\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  roomCount = john.\cf10 residence\cf4 ?.\cf10 numberOfRooms\cf4  \{\
+            \cf11 print\cf4 (\cf12 "John's residence has \cf4 \\(roomCount)\cf12  room(s)."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "Unable to retrieve the number of rooms.(John)"\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93Unable to retrieve the number of rooms.\'94\cf4 \
+        \
+        \cf2 //
+\f2 \'d4\'da
+\f0 residence
+\f2 \'ba\'f3\'c3\'e6\'cc\'ed\'bc\'d3\'ce\'ca\'ba\'c5\'d6\'ae\'ba\'f3\'a3\'ac
+\f0 Swift 
+\f2 \'be\'cd\'bb\'e1\'d4\'da
+\f0 residence
+\f2 \'b2\'bb\'ce\'aa
+\f0 nil
+\f2 \'b5\'c4\'c7\'e9\'bf\'f6\'cf\'c2\'b7\'c3\'ce\'ca
+\f0 numberOfRooms
+\f2 \'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'d2\'f2\'ce\'aa\'b7\'c3\'ce\'ca
+\f0 numberOfRooms
+\f2 \'d3\'d0\'bf\'c9\'c4\'dc\'ca\'a7\'b0\'dc\'a3\'ac\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'bb\'e1\'b7\'b5\'bb\'d8
+\f0 Int?
+\f2 \'c0\'e0\'d0\'cd\'a3\'ac\'bb\'f2\'b3\'c6\'ce\'aa
+\f0 \'93
+\f2 \'bf\'c9\'d1\'a1\'b5\'c4
+\f0  Int\'94
+\f2 \'a1\'a3\'c8\'e7\'c9\'cf\'c0\'fd\'cb\'f9\'ca\'be\'a3\'ac\'b5\'b1
+\f0 residence
+\f2 \'ce\'aa
+\f0 nil
+\f2 \'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac\'bf\'c9\'d1\'a1\'b5\'c4
+\f0 Int
+\f2 \'bd\'ab\'bb\'e1\'ce\'aa
+\f0 nil
+\f2 \'a3\'ac\'b1\'ed\'c3\'f7\'ce\'de\'b7\'a8\'b7\'c3\'ce\'ca
+\f0 numberOfRooms
+\f2 \'a1\'a3\'b7\'c3\'ce\'ca\'b3\'c9\'b9\'a6\'ca\'b1\'a3\'ac\'bf\'c9\'d1\'a1\'b5\'c4
+\f0 Int
+\f2 \'d6\'b5\'bb\'e1\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'b0\'f3\'b6\'a8\'d5\'b9\'bf\'aa\'a3\'ac\'b2\'a2\'b8\'b3\'d6\'b5\'b8\'f8\'b7\'c7\'bf\'c9\'d1\'a1\'c0\'e0\'d0\'cd\'b5\'c4
+\f0 roomCount
+\f2 \'b3\'a3\'c1\'bf\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'d2\'aa\'d7\'a2\'d2\'e2\'b5\'c4\'ca\'c7\'a3\'ac\'bc\'b4\'ca\'b9
+\f0 numberOfRooms
+\f2 \'ca\'c7\'b7\'c7\'bf\'c9\'d1\'a1\'b5\'c4
+\f0 Int
+\f2 \'ca\'b1\'a3\'ac\'d5\'e2\'d2\'bb\'b5\'e3\'d2\'b2\'b3\'c9\'c1\'a2\'a1\'a3\'d6\'bb\'d2\'aa\'ca\'b9\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'be\'cd\'d2\'e2\'ce\'b6\'d7\'c5
+\f0 numberOfRooms
+\f2 \'bb\'e1\'b7\'b5\'bb\'d8\'d2\'bb\'b8\'f6
+\f0 Int?
+\f2 \'b6\'f8\'b2\'bb\'ca\'c7
+\f0 Int
+\f2 \'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'bf\'c9\'d2\'d4\'bd\'ab\'d2\'bb\'b8\'f6
+\f0 Residence
+\f2 \'b5\'c4\'ca\'b5\'c0\'fd\'b8\'b3\'b8\'f8
+\f0 john.residence
+\f2 \'a3\'ac\'d5\'e2\'d1\'f9\'cb\'fc\'be\'cd\'b2\'bb\'d4\'d9\'ca\'c7
+\f0 nil
+\f2 \'c1\'cb\'a3\'ba
+\f0 \cf4 \
+        john.\cf10 residence\cf4  = \cf8 Residence\cf4 ()\
+        \
+        \cf2 //john.residence
+\f2 \'cf\'d6\'d4\'da\'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6\'ca\'b5\'bc\'ca\'b5\'c4
+\f0 Residence
+\f2 \'ca\'b5\'c0\'fd\'a3\'ac\'b6\'f8\'b2\'bb\'d4\'d9\'ca\'c7
+\f0 nil
+\f2 \'a1\'a3\'c8\'e7\'b9\'fb\'c4\'e3\'ca\'d4\'cd\'bc\'ca\'b9\'d3\'c3\'cf\'c8\'c7\'b0\'b5\'c4\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca
+\f0 numberOfRooms
+\f2 \'a3\'ac\'cb\'fc\'cf\'d6\'d4\'da\'bd\'ab\'b7\'b5\'bb\'d8\'d6\'b5\'ce\'aa
+\f0 1
+\f2 \'b5\'c4
+\f0 Int?
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'d6\'b5\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  roomCount = john.\cf10 residence\cf4 ?.\cf10 numberOfRooms\cf4  \{\
+            \cf11 print\cf4 (\cf12 "John's residence has \cf4 \\(roomCount)\cf12  room(s)."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "Unable to retrieve the number of rooms."\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93John's residence has 1 room(s).\'94\cf4 \
+        \
+        \cf2 //
+\f2 \'cf\'c2\'c3\'e6\'b5\'c4\'b4\'fa\'c2\'eb\'b4\'b4\'bd\'a8\'c1\'cb\'d2\'bb\'b8\'f6
+\f0 Person
+\f2 \'ca\'b5\'c0\'fd\'a3\'ac\'c8\'bb\'ba\'f3\'cf\'f1\'d6\'ae\'c7\'b0\'d2\'bb\'d1\'f9\'a3\'ac\'b3\'a2\'ca\'d4\'b7\'c3\'ce\'ca
+\f0 numberOfRooms
+\f2 \'ca\'f4\'d0\'d4\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  david = \cf8 Person\cf4 ()\
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  roomCount = david.\cf10 residence\cf4 ?.\cf10 numberOfRooms\cf4  \{\
+            \cf11 print\cf4 (\cf12 "David's residence has \cf4 \\(roomCount)\cf12  room(s)."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "Unable to retrieve the number of rooms.(David)"\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93Unable to retrieve the number of rooms.\'94\cf4 \
+        \cf2 //
+\f2 \'d2\'f2\'ce\'aa
+\f0 john.residence
+\f2 \'ce\'aa
+\f0 nil
+\f2 \'a3\'ac\'cb\'f9\'d2\'d4\'d5\'e2\'b8\'f6\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'d2\'c0\'be\'c9\'bb\'e1\'cf\'f1\'cf\'c8\'c7\'b0\'d2\'bb\'d1\'f9\'ca\'a7\'b0\'dc\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'bb\'b9\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'c9\'e8\'d6\'c3\'ca\'f4\'d0\'d4\'d6\'b5\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  someAddress = \cf8 Address\cf4 ()\
+        someAddress.\cf10 buildingNumber\cf4  = \cf12 "29"\cf4 \
+        someAddress.\cf10 street\cf4  = \cf12 "Acacia Road"\cf4 \
+        david.\cf10 residence\cf4 ?.\cf10 address\cf4  = someAddress\
+        \
+        \cf2 //
+\f2 \'d4\'da\'d5\'e2\'b8\'f6\'c0\'fd\'d7\'d3\'d6\'d0\'a3\'ac\'cd\'a8\'b9\'fd
+\f0 john.residence
+\f2 \'c0\'b4\'c9\'e8\'b6\'a8
+\f0 address
+\f2 \'ca\'f4\'d0\'d4\'d2\'b2\'bb\'e1\'ca\'a7\'b0\'dc\'a3\'ac\'d2\'f2\'ce\'aa
+\f0 john.residence
+\f2 \'b5\'b1\'c7\'b0\'ce\'aa
+\f0 nil
+\f2 \'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'c9\'cf\'c3\'e6\'b4\'fa\'c2\'eb\'d6\'d0\'b5\'c4\'b8\'b3\'d6\'b5\'b9\'fd\'b3\'cc\'ca\'c7\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b5\'c4\'d2\'bb\'b2\'bf\'b7\'d6\'a3\'ac\'d5\'e2\'d2\'e2\'ce\'b6\'d7\'c5\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'ca\'a7\'b0\'dc\'ca\'b1\'a3\'ac\'b5\'c8\'ba\'c5\'d3\'d2\'b2\'e0\'b5\'c4\'b4\'fa\'c2\'eb\'b2\'bb\'bb\'e1\'b1\'bb\'d6\'b4\'d0\'d0\'a1\'a3\'b6\'d4\'d3\'da\'c9\'cf\'c3\'e6\'b5\'c4\'b4\'fa\'c2\'eb\'c0\'b4\'cb\'b5\'a3\'ac\'ba\'dc\'c4\'d1\'d1\'e9\'d6\'a4\'d5\'e2\'d2\'bb\'b5\'e3\'a3\'ac\'d2\'f2\'ce\'aa\'cf\'f1\'d5\'e2\'d1\'f9\'b8\'b3\'d6\'b5\'d2\'bb\'b8\'f6\'b3\'a3\'c1\'bf\'c3\'bb\'d3\'d0\'c8\'ce\'ba\'ce\'b8\'b1\'d7\'f7\'d3\'c3\'a1\'a3\'cf\'c2\'c3\'e6\'b5\'c4\'b4\'fa\'c2\'eb\'cd\'ea\'b3\'c9\'c1\'cb\'cd\'ac\'d1\'f9\'b5\'c4\'ca\'c2\'c7\'e9\'a3\'ac\'b5\'ab\'ca\'c7\'cb\'fc\'ca\'b9\'d3\'c3\'d2\'bb\'b8\'f6\'ba\'af\'ca\'fd\'c0\'b4\'b4\'b4\'bd\'a8
+\f0 Address
+\f2 \'ca\'b5\'c0\'fd\'a3\'ac\'c8\'bb\'ba\'f3\'bd\'ab\'b8\'c3\'ca\'b5\'c0\'fd\'b7\'b5\'bb\'d8\'d3\'c3\'d3\'da\'b8\'b3\'d6\'b5\'a1\'a3\'b8\'c3\'ba\'af\'ca\'fd\'bb\'e1\'d4\'da\'b7\'b5\'bb\'d8\'c7\'b0\'b4\'f2\'d3\'a1
+\f0 \'93Function was called\'94
+\f2 \'a3\'ac\'d5\'e2\'ca\'b9\'c4\'e3\'c4\'dc\'d1\'e9\'d6\'a4\'b5\'c8\'ba\'c5\'d3\'d2\'b2\'e0\'b5\'c4\'b4\'fa\'c2\'eb\'ca\'c7\'b7\'f1\'b1\'bb\'d6\'b4\'d0\'d0\'a1\'a3
+\f0 \cf4 \
+        
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf7 createAddress\cf4 () -> \cf8 Address\cf4  \{\
+            \cf11 print\cf4 (\cf12 "Funciton was called."\cf4 )\
+            \
+            
+\f1\b \cf5 let
+\f0\b0 \cf4  someAddress = \cf8 Address\cf4 ()\
+            someAddress.\cf10 buildingNumber\cf4  = \cf12 "29"\cf4 \
+            someAddress.\cf10 buildingName\cf4  = \cf12 "Acacia Road"\cf4 \
+            \
+            
+\f1\b \cf5 return
+\f0\b0 \cf4  someAddress\
+        \}\
+        \
+        david.\cf10 residence\cf4 ?.\cf10 address\cf4  = \cf10 createAddress\cf4 ()\
+        \cf2 //
+\f2 \'c3\'bb\'d3\'d0\'c8\'ce\'ba\'ce\'b4\'f2\'d3\'a1\'cf\'fb\'cf\'a2\'a3\'ac\'bf\'c9\'d2\'d4\'bf\'b4\'b3\'f6
+\f0 createAddress()
+\f2 \'ba\'af\'ca\'fd\'b2\'a2\'ce\'b4\'b1\'bb\'d6\'b4\'d0\'d0\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8
+\f0 \cf4 \
+\
+        \cf2 //
+\f2 \'c8\'e7\'b9\'fb\'d4\'da\'bf\'c9\'d1\'a1\'d6\'b5\'c9\'cf\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'b5\'f7\'d3\'c3\'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'a3\'ac\'b8\'c3\'b7\'bd\'b7\'a8\'b5\'c4\'b7\'b5\'bb\'d8\'c0\'e0\'d0\'cd\'bb\'e1\'ca\'c7
+\f0 Void?
+\f2 \'a3\'ac\'b6\'f8\'b2\'bb\'ca\'c7
+\f0 Void
+\f2 \'a3\'ac\'d2\'f2\'ce\'aa\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b5\'c3\'b5\'bd\'b5\'c4\'b7\'b5\'bb\'d8\'d6\'b5\'b6\'bc\'ca\'c7\'bf\'c9\'d1\'a1\'b5\'c4\'a1\'a3\'d5\'e2\'d1\'f9\'ce\'d2\'c3\'c7\'be\'cd\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3
+\f0 if
+\f2 \'d3\'ef\'be\'e4\'c0\'b4\'c5\'d0\'b6\'cf\'c4\'dc\'b7\'f1\'b3\'c9\'b9\'a6\'b5\'f7\'d3\'c3
+\f0 printNumberOfRooms()
+\f2 \'b7\'bd\'b7\'a8\'a3\'ac\'bc\'b4\'ca\'b9\'b7\'bd\'b7\'a8\'b1\'be\'c9\'ed\'c3\'bb\'d3\'d0\'b6\'a8\'d2\'e5\'b7\'b5\'bb\'d8\'d6\'b5\'a1\'a3\'cd\'a8\'b9\'fd\'c5\'d0\'b6\'cf\'b7\'b5\'bb\'d8\'d6\'b5\'ca\'c7\'b7\'f1\'ce\'aa
+\f0 nil
+\f2 \'bf\'c9\'d2\'d4\'c5\'d0\'b6\'cf\'b5\'f7\'d3\'c3\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  david.\cf10 residence\cf4 ?.\cf10 printNumberOfRooms\cf4 () \cf11 !=\cf4  
+\f1\b \cf5 nil
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "It was possible to print the number of rooms."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "It was not possible to print the number of rooms."\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93It was not possible to print the number of rooms.\'94\cf4 \
+        \
+        \cf2 //
+\f2 \'cd\'ac\'d1\'f9\'b5\'c4\'a3\'ac\'bf\'c9\'d2\'d4\'be\'dd\'b4\'cb\'c5\'d0\'b6\'cf\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'ce\'aa\'ca\'f4\'d0\'d4\'b8\'b3\'d6\'b5\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6\'a1\'a3\'d4\'da\'c9\'cf\'c3\'e6\'b5\'c4\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b7\'c3\'ce\'ca\'ca\'f4\'d0\'d4\'b5\'c4\'c0\'fd\'d7\'d3\'d6\'d0\'a3\'ac\'ce\'d2\'c3\'c7\'b3\'a2\'ca\'d4\'b8\'f8
+\f0 john.residence
+\f2 \'d6\'d0\'b5\'c4
+\f0 address
+\f2 \'ca\'f4\'d0\'d4\'b8\'b3\'d6\'b5\'a3\'ac\'bc\'b4\'ca\'b9
+\f0 residence
+\f2 \'ce\'aa
+\f0 nil
+\f2 \'a1\'a3\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b8\'f8\'ca\'f4\'d0\'d4\'b8\'b3\'d6\'b5\'bb\'e1\'b7\'b5\'bb\'d8
+\f0 Void?
+\f2 \'a3\'ac\'cd\'a8\'b9\'fd\'c5\'d0\'b6\'cf\'b7\'b5\'bb\'d8\'d6\'b5\'ca\'c7\'b7\'f1\'ce\'aa
+\f0 nil
+\f2 \'be\'cd\'bf\'c9\'d2\'d4\'d6\'aa\'b5\'c0\'b8\'b3\'d6\'b5\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  (david.\cf10 residence\cf4 ?.\cf10 address\cf4  = \cf10 createAddress\cf4 ()) \cf11 !=\cf4  
+\f1\b \cf5 nil
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "It was possible to set the address."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "It was not possible to set the address."\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93It was not possible to set the address.\'94\cf4 \
+        \
+        \
+        \cf2 //
+\f2 \'cf\'c2\'c3\'e6\'d5\'e2\'b8\'f6\'c0\'fd\'d7\'d3\'d3\'c3\'cf\'c2\'b1\'ea\'b7\'c3\'ce\'ca
+\f0 john.residence
+\f2 \'ca\'f4\'d0\'d4\'b4\'e6\'b4\'a2\'b5\'c4
+\f0 Residence
+\f2 \'ca\'b5\'c0\'fd\'b5\'c4
+\f0 rooms
+\f2 \'ca\'fd\'d7\'e9\'d6\'d0\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'b7\'bf\'bc\'e4\'b5\'c4\'c3\'fb\'b3\'c6\'a3\'ac\'d2\'f2\'ce\'aa
+\f0 john.residence
+\f2 \'ce\'aa
+\f0 nil
+\f2 \'a3\'ac\'cb\'f9\'d2\'d4\'cf\'c2\'b1\'ea\'b5\'f7\'d3\'c3\'ca\'a7\'b0\'dc\'c1\'cb\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  firstRoomName = david.\cf10 residence\cf4 ?[\cf13 0\cf4 ].\cf10 name\cf4  \{\
+            \cf11 print\cf4 (\cf12 "The first room name is \cf4 \\(firstRoomName)\cf12 ."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "Unable to retrieve the first room name.(David)"\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93Unable to retrieve the first room name.\'94\cf4 \
+        \
+        \cf2 //
+\f2 \'d4\'da\'d5\'e2\'b8\'f6\'c0\'fd\'d7\'d3\'d6\'d0\'a3\'ac\'ce\'ca\'ba\'c5\'d6\'b1\'bd\'d3\'b7\'c5\'d4\'da
+\f0 david.residence
+\f2 \'b5\'c4\'ba\'f3\'c3\'e6\'a3\'ac\'b2\'a2\'c7\'d2\'d4\'da\'b7\'bd\'c0\'a8\'ba\'c5\'b5\'c4\'c7\'b0\'c3\'e6\'a3\'ac\'d2\'f2\'ce\'aa
+\f0 david.residence
+\f2 \'ca\'c7\'bf\'c9\'d1\'a1\'d6\'b5\'a1\'a3
+\f0 \cf4 \
+        \cf2 //
+\f2 \'c0\'e0\'cb\'c6\'b5\'c4\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'cf\'c2\'b1\'ea\'a3\'ac\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'b8\'b3\'d6\'b5\'a3\'ba
+\f0 \cf4 \
+        \
+        david.\cf10 residence\cf4 ?[\cf13 0\cf4 ] = \cf8 Room\cf4 (name: \cf12 "Bathroom"\cf4 )\
+        \
+        \cf2 //
+\f2 \'d5\'e2\'b4\'ce\'b8\'b3\'d6\'b5\'cd\'ac\'d1\'f9\'bb\'e1\'ca\'a7\'b0\'dc\'a3\'ac\'d2\'f2\'ce\'aa
+\f0 residence
+\f2 \'c4\'bf\'c7\'b0\'ca\'c7
+\f0 nil
+\f2 \'a1\'a3
+\f0 \cf4 \
+        \cf2 //
+\f2 \'c8\'e7\'b9\'fb\'c4\'e3\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6
+\f0 Residence
+\f2 \'ca\'b5\'c0\'fd\'a3\'ac\'b2\'a2\'ce\'aa\'c6\'e4
+\f0 rooms
+\f2 \'ca\'fd\'d7\'e9\'cc\'ed\'bc\'d3\'d2\'bb\'d0\'a9
+\f0 Room
+\f2 \'ca\'b5\'c0\'fd\'a3\'ac\'c8\'bb\'ba\'f3\'bd\'ab
+\f0 Residence
+\f2 \'ca\'b5\'c0\'fd\'b8\'b3\'d6\'b5\'b8\'f8
+\f0 david.residence
+\f2 \'a3\'ac\'c4\'c7\'be\'cd\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ba\'cd\'cf\'c2\'b1\'ea\'c0\'b4\'b7\'c3\'ce\'ca\'ca\'fd\'d7\'e9\'d6\'d0\'b5\'c4\'d4\'aa\'cb\'d8\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  davidHouse = \cf8 Residence\cf4 ()\
+        davidHouse.\cf10 rooms\cf4 .\cf11 append\cf4 (\cf8 Room\cf4 (name: \cf12 "Living Room"\cf4 ))\
+        davidHouse.\cf10 rooms\cf4 .\cf11 append\cf4 (\cf8 Room\cf4 (name: \cf12 "Kitchen"\cf4 ))\
+        david.\cf10 residence\cf4  = davidHouse\
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  firstRoomName = david.\cf10 residence\cf4 ?[\cf13 0\cf4 ].\cf10 name\cf4  \{\
+            \cf11 print\cf4 (\cf12 "The first room name is \cf4 \\(firstRoomName)\cf12 ."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "Unable to retrieve the first room name."\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93The first room name is Living Room.\'94\cf4 \
+        \
+        \cf2 //
+\f2 \'b7\'c3\'ce\'ca\'bf\'c9\'d1\'a1\'c0\'e0\'d0\'cd\'b5\'c4\'cf\'c2\'b1\'ea
+\f0 \cf4 \
+        
+\f1\b \cf5 var
+\f0\b0 \cf4  testScores = [\cf12 "Dave"\cf4 : [\cf13 86\cf4 , \cf13 82\cf4 , \cf13 84\cf4 ], \cf12 "Bev"\cf4 : [\cf13 79\cf4 , \cf13 94\cf4 , \cf13 81\cf4 ]]\
+        testScores[\cf12 "Dave"\cf4 ]?[\cf13 0\cf4 ] = \cf13 91\cf4 \
+        testScores[\cf12 "Bev"\cf4 ]?[\cf13 0\cf4 ] \cf11 +=\cf4  \cf13 1\cf4 \
+        testScores[\cf12 "Brian"\cf4 ]?[\cf13 0\cf4 ] = \cf13 72\cf4 \
+        \cf2 // "Dave" 
+\f2 \'ca\'fd\'d7\'e9\'cf\'d6\'d4\'da\'ca\'c7
+\f0  [91, 82, 84]
+\f2 \'a3\'ac
+\f0 "Bev" 
+\f2 \'ca\'fd\'d7\'e9\'cf\'d6\'d4\'da\'ca\'c7
+\f0  [80, 94, 81]\cf4 \
+\
+        \cf2 //
+\f2 \'c9\'cf\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'d6\'d0\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6
+\f0 testScores
+\f2 \'ca\'fd\'d7\'e9\'a3\'ac\'b0\'fc\'ba\'ac\'c1\'cb\'c1\'bd\'b8\'f6\'bc\'fc\'d6\'b5\'b6\'d4\'a3\'ac\'b0\'d1
+\f0 String
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'bc\'fc\'d3\'b3\'c9\'e4\'b5\'bd\'d2\'bb\'b8\'f6
+\f0 Int
+\f2 \'d6\'b5\'b5\'c4\'ca\'fd\'d7\'e9\'a1\'a3\'d5\'e2\'b8\'f6\'c0\'fd\'d7\'d3\'d3\'c3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'b0\'d1
+\f0 "Dave"
+\f2 \'ca\'fd\'d7\'e9\'d6\'d0\'b5\'da\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'c9\'e8\'ce\'aa
+\f0 91
+\f2 \'a3\'ac\'b0\'d1
+\f0 "Bev"
+\f2 \'ca\'fd\'d7\'e9\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8
+\f0 +1
+\f2 \'a3\'ac\'c8\'bb\'ba\'f3\'b3\'a2\'ca\'d4\'b0\'d1
+\f0 "Brian"
+\f2 \'ca\'fd\'d7\'e9\'d6\'d0\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'c9\'e8\'ce\'aa
+\f0 72
+\f2 \'a1\'a3\'c7\'b0\'c1\'bd\'b8\'f6\'b5\'f7\'d3\'c3\'b3\'c9\'b9\'a6\'a3\'ac\'d2\'f2\'ce\'aa
+\f0 testScores
+\f2 \'d7\'d6\'b5\'e4\'d6\'d0\'b0\'fc\'ba\'ac
+\f0 "Dave"
+\f2 \'ba\'cd
+\f0 "Bev"
+\f2 \'d5\'e2\'c1\'bd\'b8\'f6\'bc\'fc\'a1\'a3\'b5\'ab\'ca\'c7
+\f0 testScores
+\f2 \'d7\'d6\'b5\'e4\'d6\'d0\'c3\'bb\'d3\'d0
+\f0 "Brian"
+\f2 \'d5\'e2\'b8\'f6\'bc\'fc\'a3\'ac\'cb\'f9\'d2\'d4\'b5\'da\'c8\'fd\'b8\'f6\'b5\'f7\'d3\'c3\'ca\'a7\'b0\'dc\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'c1\'ac\'bd\'d3\'b6\'e0\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3
+\f0 \cf4 \
+        \cf2 //
+\f2 \'cf\'c2\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'b3\'a2\'ca\'d4\'b7\'c3\'ce\'ca
+\f0 john
+\f2 \'d6\'d0\'b5\'c4
+\f0 residence
+\f2 \'ca\'f4\'d0\'d4\'d6\'d0\'b5\'c4
+\f0 address
+\f2 \'ca\'f4\'d0\'d4\'d6\'d0\'b5\'c4
+\f0 street
+\f2 \'ca\'f4\'d0\'d4\'a1\'a3\'d5\'e2\'c0\'ef\'ca\'b9\'d3\'c3\'c1\'cb\'c1\'bd\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a3\'ac
+\f0 residence
+\f2 \'d2\'d4\'bc\'b0
+\f0 address
+\f2 \'b6\'bc\'ca\'c7\'bf\'c9\'d1\'a1\'d6\'b5\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  davidStreet = david.\cf10 residence\cf4 ?.\cf10 address\cf4 ?.\cf10 street\cf4  \{\
+            \cf11 print\cf4 (\cf12 "David's street name is \cf4 \\(davidStreet)\cf12 ."\cf4 )\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "Unable to retrieve the address.(David)"\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93Unable to retrieve the address.\'94\cf4 \
+        \
+        \cf14 ///
+\f3 \cf2 david.residence
+\f2 \cf2 \'cf\'d6\'d4\'da\'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6\'d3\'d0\'d0\'a7\'b5\'c4
+\f3 \cf2 Residence
+\f2 \cf2 \'ca\'b5\'c0\'fd\'a1\'a3\'c8\'bb\'b6\'f8\'a3\'ac
+\f3 \cf2 dat
+\f2 \cf2 \'bb\'e1\'ca\'a7\'b0\'dc\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'d0\'e8\'d2\'aa\'d7\'a2\'d2\'e2\'b5\'c4\'ca\'c7\'a3\'ac\'c9\'cf\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'d6\'d0\'a3\'ac
+\f0 street
+\f2 \'b5\'c4\'ca\'f4\'d0\'d4\'ce\'aa
+\f0 String?
+\f2 \'a1\'a3
+\f0 john.residence?.address?.street
+\f2 \'b5\'c4\'b7\'b5\'bb\'d8\'d6\'b5\'d2\'b2\'d2\'c0\'c8\'bb\'ca\'c7
+\f0 String?
+\f2 \'a3\'ac\'bc\'b4\'ca\'b9\'d2\'d1\'be\'ad\'ca\'b9\'d3\'c3\'c1\'cb\'c1\'bd\'b2\'e3\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'c8\'e7\'b9\'fb\'ce\'aa
+\f0 david.residence.address
+\f2 \'b8\'b3\'d6\'b5\'d2\'bb\'b8\'f6
+\f0 Address
+\f2 \'ca\'b5\'c0\'fd\'a3\'ac\'b2\'a2\'c7\'d2\'ce\'aa
+\f0 address
+\f2 \'d6\'d0\'b5\'c4
+\f0 street
+\f2 \'ca\'f4\'d0\'d4\'c9\'e8\'d6\'c3\'d2\'bb\'b8\'f6\'d3\'d0\'d0\'a7\'d6\'b5\'a3\'ac\'ce\'d2\'c3\'c7\'be\'cd\'c4\'dc\'b9\'fd\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'b7\'c3\'ce\'ca
+\f0 street
+\f2 \'ca\'f4\'d0\'d4\'a3\'ba
+\f0 \cf4 \
+        \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  daviaAddress = \cf8 Address\cf4 ()\
+        daviaAddress.\cf10 buildingName\cf4  = \cf12 "The Larches"\cf4 \
+        daviaAddress.\cf10 street\cf4  = \cf12 "Laurel Street"\cf4 \
+        john.\cf10 residence\cf4 ?.\cf10 address\cf4  = daviaAddress\
+        \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  davidStreet = john.\cf10 residence\cf4 ?.\cf10 address\cf4 ?.\cf10 street\cf4  \{\
+            \cf11 print\cf4 (\cf12 "David's street name is \cf4 \\(davidStreet)\cf12 ."\cf4 )\
+\
+        \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+            \cf11 print\cf4 (\cf12 "Unable to retrieve the address."\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93David's street name is Laurel Street.\'94\cf4 \
+        \
+        \cf2 //
+\f2 \'d4\'da\'c9\'cf\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'d6\'d0\'a3\'ac\'d2\'f2\'ce\'aa
+\f0 john.residence
+\f2 \'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6\'d3\'d0\'d0\'a7\'b5\'c4
+\f0 Address
+\f2 \'ca\'b5\'c0\'fd\'a3\'ac\'cb\'f9\'d2\'d4\'b6\'d4
+\f0 john.residence
+\f2 \'b5\'c4
+\f0 address
+\f2 \'ca\'f4\'d0\'d4\'b8\'b3\'d6\'b5\'bd\'ab\'bb\'e1\'b3\'c9\'b9\'a6\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'d4\'da\'b7\'bd\'b7\'a8\'b5\'c4\'bf\'c9\'d1\'a1\'b7\'b5\'bb\'d8\'d6\'b5\'c9\'cf\'bd\'f8\'d0\'d0\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3
+\f0 \cf4 \
+        \cf2 //
+\f2 \'d4\'da\'cf\'c2\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'d6\'d0\'a3\'ac\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'b5\'f7\'d3\'c3
+\f0 Address
+\f2 \'b5\'c4
+\f0 buildingIdentifier()
+\f2 \'b7\'bd\'b7\'a8\'a1\'a3\'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'b7\'b5\'bb\'d8
+\f0 String?
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'d6\'b5\'a1\'a3\'c8\'e7\'c9\'cf\'cb\'f9\'ca\'f6\'a3\'ac\'cd\'a8\'b9\'fd\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'c0\'b4\'b5\'f7\'d3\'c3\'b8\'c3\'b7\'bd\'b7\'a8\'a3\'ac\'d7\'ee\'d6\'d5\'b5\'c4\'b7\'b5\'bb\'d8\'d6\'b5\'d2\'c0\'be\'c9\'bb\'e1\'ca\'c7
+\f0 String?
+\f2 \'c0\'e0\'d0\'cd\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  buildingIdentifier = david.\cf10 residence\cf4 ?.\cf10 address\cf4 ?.\cf10 buildingIdentifier\cf4 () \{\
+            \cf11 print\cf4 (\cf12 "David's building identifier is \cf4 \\(buildingIdentifier)\cf12 ."\cf4 )\
+        \}\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93John's building identifier is The Larches.\'94\cf4 \
+\
+        \cf2 //
+\f2 \'c8\'e7\'b9\'fb\'d2\'aa\'d4\'da\'b8\'c3\'b7\'bd\'b7\'a8\'b5\'c4\'b7\'b5\'bb\'d8\'d6\'b5\'c9\'cf\'bd\'f8\'d0\'d0\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a3\'ac\'d4\'da\'b7\'bd\'b7\'a8\'b5\'c4\'d4\'b2\'c0\'a8\'ba\'c5\'ba\'f3\'c3\'e6\'bc\'d3\'c9\'cf\'ce\'ca\'ba\'c5\'bc\'b4\'bf\'c9\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 if
+\f0\b0 \cf4  
+\f1\b \cf5 let
+\f0\b0 \cf4  beginsWithThe = david.\cf10 residence\cf4 ?.\cf10 address\cf4 ?.\cf10 buildingIdentifier\cf4 ()?.\cf11 hasPrefix\cf4 (\cf12 "The"\cf4 ) \{\
+            
+\f1\b \cf5 if
+\f0\b0 \cf4  beginsWithThe \{\
+                \cf11 print\cf4 (\cf12 "David's building identifier begins with \\"The\\"."\cf4 )\
+            \} 
+\f1\b \cf5 else
+\f0\b0 \cf4  \{\
+                \cf11 print\cf4 (\cf12 "David's building identifier does not begin with \\"The\\"."\cf4 )\
+            \}\
+        \}\
+        \
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  \'93David's building identifier begins with "The".\'94\cf4 \
+        \cf2 //
+\f2 \'d7\'a2\'d2\'e2
+\f0 \cf4 \
+        \cf2 //
+\f2 \'d4\'da\'c9\'cf\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'d6\'d0\'a3\'ac\'d4\'da\'b7\'bd\'b7\'a8\'b5\'c4\'d4\'b2\'c0\'a8\'ba\'c5\'ba\'f3\'c3\'e6\'bc\'d3\'c9\'cf\'ce\'ca\'ba\'c5\'ca\'c7\'d2\'f2\'ce\'aa\'c4\'e3\'d2\'aa\'d4\'da
+\f0 buildingIdentifier()
+\f2 \'b7\'bd\'b7\'a8\'b5\'c4\'bf\'c9\'d1\'a1\'b7\'b5\'bb\'d8\'d6\'b5\'c9\'cf\'bd\'f8\'d0\'d0\'bf\'c9\'d1\'a1\'c1\'b4\'ca\'bd\'b5\'f7\'d3\'c3\'a3\'ac\'b6\'f8\'b2\'bb\'ca\'c7\'b7\'bd\'b7\'a8\'b1\'be\'c9\'ed\'a1\'a3
+\f0 \cf4 \
+    \}\
+    \
+\}\
+}

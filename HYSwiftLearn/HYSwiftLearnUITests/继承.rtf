@@ -1,0 +1,665 @@
+{\rtf1\ansi\ansicpg936\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset134 PingFangSC-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red38\green117\blue7;\red255\green255\blue255;\red0\green0\blue0;
+\red155\green35\blue147;\red11\green79\blue121;\red15\green104\blue160;\red28\green0\blue207;\red57\green0\blue160;
+\red196\green26\blue22;}
+{\*\expandedcolortbl;;\csgenericrgb\c14771\c45953\c2591;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c0\c85000;
+\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c4477\c31152\c47474;\csgenericrgb\c5696\c40622\c62817;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c22454\c0\c62803;
+\csgenericrgb\c77000\c10200\c8600;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 //\cf4 \
+\cf2 //  InheritUsage.swift\cf4 \
+\cf2 //  Inherit\cf4 \
+\cf2 //\cf4 \
+\cf2 //  Created by dyf on 2017/10/20.\cf4 \
+\cf2 //  Copyright \'a9 2017 dyf. All rights reserved.\cf4 \
+\cf2 //\cf4 \
+\
+
+\f1\b \cf5 import
+\f0\b0 \cf4  UIKit\
+\
+\cf2 //
+\f2 \'bc\'cc\'b3\'d0
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'b1\'be\'d2\'b3\'b0\'fc\'ba\'ac\'c4\'da\'c8\'dd\'a3\'ba
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'bb\'f9\'c0\'e0
+\f0 \cf4 \
+\cf2 //
+\f2 \'d7\'d3\'c0\'e0\'c9\'fa\'b3\'c9
+\f0 \cf4 \
+\cf2 //
+\f2 \'d6\'d8\'d0\'b4
+\f0 \cf4 \
+\cf2 //
+\f2 \'b7\'c0\'d6\'b9\'d6\'d8\'d0\'b4
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d2\'bb\'b8\'f6\'c0\'e0\'bf\'c9\'d2\'d4\'bc\'cc\'b3\'d0\'c1\'ed\'d2\'bb\'b8\'f6\'c0\'e0\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'ba\'cd\'c6\'e4\'cb\'fc\'cc\'d8\'d0\'d4\'a1\'a3\'b5\'b1\'d2\'bb\'b8\'f6\'c0\'e0\'bc\'cc\'b3\'d0\'c6\'e4\'cb\'fc\'c0\'e0\'ca\'b1\'a3\'ac\'bc\'cc\'b3\'d0\'c0\'e0\'bd\'d0\'d7\'d3\'c0\'e0\'a3\'ac\'b1\'bb\'bc\'cc\'b3\'d0\'c0\'e0\'bd\'d0\'b3\'ac\'c0\'e0\'a3\'a8\'bb\'f2\'b8\'b8\'c0\'e0\'a3\'a9\'a1\'a3\'d4\'da
+\f0  Swift 
+\f2 \'d6\'d0\'a3\'ac\'bc\'cc\'b3\'d0\'ca\'c7\'c7\'f8\'b7\'d6\'a1\'b8\'c0\'e0\'a1\'b9\'d3\'eb\'c6\'e4\'cb\'fc\'c0\'e0\'d0\'cd\'b5\'c4\'d2\'bb\'b8\'f6\'bb\'f9\'b1\'be\'cc\'d8\'d5\'f7\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d4\'da
+\f0  Swift 
+\f2 \'d6\'d0\'a3\'ac\'c0\'e0\'bf\'c9\'d2\'d4\'b5\'f7\'d3\'c3\'ba\'cd\'b7\'c3\'ce\'ca\'b3\'ac\'c0\'e0\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'ba\'cd\'cf\'c2\'b1\'ea\'a3\'ac\'b2\'a2\'c7\'d2\'bf\'c9\'d2\'d4\'d6\'d8\'d0\'b4\'d5\'e2\'d0\'a9\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'ba\'cd\'cf\'c2\'b1\'ea\'c0\'b4\'d3\'c5\'bb\'af\'bb\'f2\'d0\'de\'b8\'c4\'cb\'fc\'c3\'c7\'b5\'c4\'d0\'d0\'ce\'aa\'a1\'a3
+\f0 Swift 
+\f2 \'bb\'e1\'bc\'ec\'b2\'e9\'c4\'e3\'b5\'c4\'d6\'d8\'d0\'b4\'b6\'a8\'d2\'e5\'d4\'da\'b3\'ac\'c0\'e0\'d6\'d0\'ca\'c7\'b7\'f1\'d3\'d0\'c6\'a5\'c5\'e4\'b5\'c4\'b6\'a8\'d2\'e5\'a3\'ac\'d2\'d4\'b4\'cb\'c8\'b7\'b1\'a3\'c4\'e3\'b5\'c4\'d6\'d8\'d0\'b4\'d0\'d0\'ce\'aa\'ca\'c7\'d5\'fd\'c8\'b7\'b5\'c4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'bf\'c9\'d2\'d4\'ce\'aa\'c0\'e0\'d6\'d0\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'cc\'ed\'bc\'d3\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'a3\'ac\'d5\'e2\'d1\'f9\'d2\'bb\'c0\'b4\'a3\'ac\'b5\'b1\'ca\'f4\'d0\'d4\'d6\'b5\'b8\'c4\'b1\'e4\'ca\'b1\'a3\'ac\'c0\'e0\'be\'cd\'bb\'e1\'b1\'bb\'cd\'a8\'d6\'aa\'b5\'bd\'a1\'a3\'bf\'c9\'d2\'d4\'ce\'aa\'c8\'ce\'ba\'ce\'ca\'f4\'d0\'d4\'cc\'ed\'bc\'d3\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'a3\'ac\'ce\'de\'c2\'db\'cb\'fc\'d4\'ad\'b1\'be\'b1\'bb\'b6\'a8\'d2\'e5\'ce\'aa\'b4\'e6\'b4\'a2\'d0\'cd\'ca\'f4\'d0\'d4\'bb\'b9\'ca\'c7\'bc\'c6\'cb\'e3\'d0\'cd\'ca\'f4\'d0\'d4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'bb\'f9\'c0\'e0
+\f0 \cf4 \
+\cf2 //
+\f2 \'b2\'bb\'bc\'cc\'b3\'d0\'d3\'da\'c6\'e4\'cb\'fc\'c0\'e0\'b5\'c4\'c0\'e0\'a3\'ac\'b3\'c6\'d6\'ae\'ce\'aa\'bb\'f9\'c0\'e0\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d7\'a2\'d2\'e2
+\f0 \cf4 \
+\cf2 //Swift 
+\f2 \'d6\'d0\'b5\'c4\'c0\'e0\'b2\'a2\'b2\'bb\'ca\'c7\'b4\'d3\'d2\'bb\'b8\'f6\'cd\'a8\'d3\'c3\'b5\'c4\'bb\'f9\'c0\'e0\'bc\'cc\'b3\'d0\'b6\'f8\'c0\'b4\'a1\'a3\'c8\'e7\'b9\'fb\'c4\'e3\'b2\'bb\'ce\'aa\'c4\'e3\'b6\'a8\'d2\'e5\'b5\'c4\'c0\'e0\'d6\'b8\'b6\'a8\'d2\'bb\'b8\'f6\'b3\'ac\'c0\'e0\'b5\'c4\'bb\'b0\'a3\'ac\'d5\'e2\'b8\'f6\'c0\'e0\'be\'cd\'d7\'d4\'b6\'af\'b3\'c9\'ce\'aa\'bb\'f9\'c0\'e0\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'cf\'c2\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6\'bd\'d0
+\f0 Vehicle
+\f2 \'b5\'c4\'bb\'f9\'c0\'e0\'a1\'a3\'d5\'e2\'b8\'f6\'bb\'f9\'c0\'e0\'c9\'f9\'c3\'f7\'c1\'cb\'d2\'bb\'b8\'f6\'c3\'fb\'ce\'aa
+\f0 currentSpeed
+\f2 \'a3\'ac\'c4\'ac\'c8\'cf\'d6\'b5\'ca\'c7
+\f0 0.0
+\f2 \'b5\'c4\'b4\'e6\'b4\'a2\'ca\'f4\'d0\'d4\'a3\'a8\'ca\'f4\'d0\'d4\'c0\'e0\'d0\'cd\'cd\'c6\'b6\'cf\'ce\'aa
+\f0 Double
+\f2 \'a3\'a9\'a1\'a3
+\f0 currentSpeed
+\f2 \'ca\'f4\'d0\'d4\'b5\'c4\'d6\'b5\'b1\'bb\'d2\'bb\'b8\'f6
+\f0 String
+\f2 \'c0\'e0\'d0\'cd\'b5\'c4\'d6\'bb\'b6\'c1\'bc\'c6\'cb\'e3\'d0\'cd\'ca\'f4\'d0\'d4
+\f0 description
+\f2 \'ca\'b9\'d3\'c3\'a3\'ac\'d3\'c3\'c0\'b4\'b4\'b4\'bd\'a8\'b3\'b5\'c1\'be\'b5\'c4\'c3\'e8\'ca\'f6\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //Vehicle
+\f2 \'bb\'f9\'c0\'e0\'d2\'b2\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6\'c3\'fb\'ce\'aa
+\f0 makeNoise
+\f2 \'b5\'c4\'b7\'bd\'b7\'a8\'a1\'a3\'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'ca\'b5\'bc\'ca\'c9\'cf\'b2\'bb\'ce\'aa
+\f0 Vehicle
+\f2 \'ca\'b5\'c0\'fd\'d7\'f6\'c8\'ce\'ba\'ce\'ca\'c2\'a3\'ac\'b5\'ab\'d6\'ae\'ba\'f3\'bd\'ab\'bb\'e1\'b1\'bb
+\f0 Vehicle
+\f2 \'b5\'c4\'d7\'d3\'c0\'e0\'b6\'a8\'d6\'c6\'a3\'ba
+\f0 \cf4 \
+\
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Vehicle\cf4  \{\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 currentSpeed\cf4  = \cf8 0.0\cf4 \
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 description\cf4 : \cf9 String\cf4  \{\
+        
+\f1\b \cf5 return
+\f0\b0 \cf4  \cf10 "traveling at \cf4 \\(currentSpeed)\cf10  miles per hour"\cf4 \
+    \}\
+    \
+    
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf7 makeNoise\cf4 () \{\
+        \
+    \}\
+\}\
+\
+\cf2 //Vehicle
+\f2 \'c0\'e0\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6\'cd\'a8\'d3\'c3\'cc\'d8\'d0\'d4\'b5\'c4\'b3\'b5\'c1\'be\'c0\'e0\'a3\'ac\'ca\'b5\'bc\'ca\'c9\'cf\'c3\'bb\'ca\'b2\'c3\'b4\'d3\'c3\'b4\'a6\'a1\'a3\'ce\'aa\'c1\'cb\'c8\'c3\'cb\'fc\'b1\'e4\'b5\'c3\'b8\'fc\'bc\'d3\'d3\'d0\'d3\'c3\'a3\'ac\'d0\'e8\'d2\'aa\'cd\'ea\'c9\'c6\'cb\'fc\'b4\'d3\'b6\'f8\'c4\'dc\'b9\'bb\'c3\'e8\'ca\'f6\'d2\'bb\'b8\'f6\'b8\'fc\'bc\'d3\'be\'df\'cc\'e5\'c0\'e0\'d0\'cd\'b5\'c4\'b3\'b5\'c1\'be\'a1\'a3
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'d7\'d3\'c0\'e0\'c9\'fa\'b3\'c9
+\f0 \cf4 \
+\cf2 //
+\f2 \'d7\'d3\'c0\'e0\'c9\'fa\'b3\'c9\'d6\'b8\'b5\'c4\'ca\'c7\'d4\'da\'d2\'bb\'b8\'f6\'d2\'d1\'d3\'d0\'c0\'e0\'b5\'c4\'bb\'f9\'b4\'a1\'c9\'cf\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'c0\'e0\'a1\'a3\'d7\'d3\'c0\'e0\'bc\'cc\'b3\'d0\'b3\'ac\'c0\'e0\'b5\'c4\'cc\'d8\'d0\'d4\'a3\'ac\'b2\'a2\'c7\'d2\'bf\'c9\'d2\'d4\'bd\'f8\'d2\'bb\'b2\'bd\'cd\'ea\'c9\'c6\'a1\'a3\'c4\'e3\'bb\'b9\'bf\'c9\'d2\'d4\'ce\'aa\'d7\'d3\'c0\'e0\'cc\'ed\'bc\'d3\'d0\'c2\'b5\'c4\'cc\'d8\'d0\'d4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'ce\'aa\'c1\'cb\'d6\'b8\'c3\'f7\'c4\'b3\'b8\'f6\'c0\'e0\'b5\'c4\'b3\'ac\'c0\'e0\'a3\'ac\'bd\'ab\'b3\'ac\'c0\'e0\'c3\'fb\'d0\'b4\'d4\'da\'d7\'d3\'c0\'e0\'c3\'fb\'b5\'c4\'ba\'f3\'c3\'e6\'a3\'ac\'d3\'c3\'c3\'b0\'ba\'c5\'b7\'d6\'b8\'f4\'a3\'ba
+\f0 \cf4 \
+\
+\cf2 //class SomeClass: SomeSuperclass \{\cf4 \
+\cf2 //    // 
+\f2 \'d5\'e2\'c0\'ef\'ca\'c7\'d7\'d3\'c0\'e0\'b5\'c4\'b6\'a8\'d2\'e5
+\f0 \cf4 \
+\cf2 //\}\cf4 \
+\
+\cf2 //
+\f2 \'cf\'c2\'d2\'bb\'b8\'f6\'c0\'fd\'d7\'d3\'a3\'ac\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'bd\'d0
+\f0 Bicycle
+\f2 \'b5\'c4\'d7\'d3\'c0\'e0\'a3\'ac\'bc\'cc\'b3\'d0\'b3\'c9\'b8\'b8\'c0\'e0
+\f0 Vehicle
+\f2 \'a3\'ba
+\f0 \cf4 \
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Bicycle\cf4 : \cf9 Vehicle\cf4  \{\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 hasBasket\cf4  = 
+\f1\b \cf5 false
+\f0\b0 \cf4 \
+\}\
+\
+\cf2 //
+\f2 \'d7\'d3\'c0\'e0\'bb\'b9\'bf\'c9\'d2\'d4\'bc\'cc\'d0\'f8\'b1\'bb\'c6\'e4\'cb\'fc\'c0\'e0\'bc\'cc\'b3\'d0\'a3\'ac\'cf\'c2\'c3\'e6\'b5\'c4\'ca\'be\'c0\'fd\'ce\'aa
+\f0 Bicycle
+\f2 \'b4\'b4\'bd\'a8\'c1\'cb\'d2\'bb\'b8\'f6\'c3\'fb\'ce\'aa
+\f0 Tandem
+\f2 \'a3\'a8\'cb\'ab\'c8\'cb\'d7\'d4\'d0\'d0\'b3\'b5\'a3\'a9\'b5\'c4\'d7\'d3\'c0\'e0\'a3\'ba
+\f0 \cf4 \
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Tandem\cf4 : \cf9 Bicycle\cf4  \{\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 currentNumberOfPassengers\cf4 : \cf9 Int\cf4  = \cf8 0\cf4 \
+\}\
+\
+\
+\cf2 //
+\f2 \'d6\'d8\'d0\'b4
+\f0 \cf4 \
+\cf2 //
+\f2 \'d7\'d3\'c0\'e0\'bf\'c9\'d2\'d4\'ce\'aa\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'b5\'c0\'fd\'b7\'bd\'b7\'a8\'a3\'ac\'c0\'e0\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'b5\'c0\'fd\'ca\'f4\'d0\'d4\'a3\'ac\'bb\'f2\'cf\'c2\'b1\'ea\'cc\'e1\'b9\'a9\'d7\'d4\'bc\'ba\'b6\'a8\'d6\'c6\'b5\'c4\'ca\'b5\'cf\'d6\'a1\'a3\'ce\'d2\'c3\'c7\'b0\'d1\'d5\'e2\'d6\'d6\'d0\'d0\'ce\'aa\'bd\'d0\'d6\'d8\'d0\'b4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'c8\'e7\'b9\'fb\'d2\'aa\'d6\'d8\'d0\'b4\'c4\'b3\'b8\'f6\'cc\'d8\'d0\'d4\'a3\'ac\'c4\'e3\'d0\'e8\'d2\'aa\'d4\'da\'d6\'d8\'d0\'b4\'b6\'a8\'d2\'e5\'b5\'c4\'c7\'b0\'c3\'e6\'bc\'d3\'c9\'cf
+\f0 override
+\f2 \'b9\'d8\'bc\'fc\'d7\'d6\'a1\'a3\'d5\'e2\'c3\'b4\'d7\'f6\'a3\'ac\'c4\'e3\'be\'cd\'b1\'ed\'c3\'f7\'c1\'cb\'c4\'e3\'ca\'c7\'cf\'eb\'cc\'e1\'b9\'a9\'d2\'bb\'b8\'f6\'d6\'d8\'d0\'b4\'b0\'e6\'b1\'be\'a3\'ac\'b6\'f8\'b7\'c7\'b4\'ed\'ce\'f3\'b5\'d8\'cc\'e1\'b9\'a9\'c1\'cb\'d2\'bb\'b8\'f6\'cf\'e0\'cd\'ac\'b5\'c4\'b6\'a8\'d2\'e5\'a1\'a3\'d2\'e2\'cd\'e2\'b5\'c4\'d6\'d8\'d0\'b4\'d0\'d0\'ce\'aa\'bf\'c9\'c4\'dc\'bb\'e1\'b5\'bc\'d6\'c2\'b2\'bb\'bf\'c9\'d4\'a4\'d6\'aa\'b5\'c4\'b4\'ed\'ce\'f3\'a3\'ac\'c8\'ce\'ba\'ce\'c8\'b1\'c9\'d9
+\f0 override
+\f2 \'b9\'d8\'bc\'fc\'d7\'d6\'b5\'c4\'d6\'d8\'d0\'b4\'b6\'bc\'bb\'e1\'d4\'da\'b1\'e0\'d2\'eb\'ca\'b1\'b1\'bb\'d5\'ef\'b6\'cf\'ce\'aa\'b4\'ed\'ce\'f3\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //override
+\f2 \'b9\'d8\'bc\'fc\'d7\'d6\'bb\'e1\'cc\'e1\'d0\'d1
+\f0  Swift 
+\f2 \'b1\'e0\'d2\'eb\'c6\'f7\'c8\'a5\'bc\'ec\'b2\'e9\'b8\'c3\'c0\'e0\'b5\'c4\'b3\'ac\'c0\'e0\'a3\'a8\'bb\'f2\'c6\'e4\'d6\'d0\'d2\'bb\'b8\'f6\'b8\'b8\'c0\'e0\'a3\'a9\'ca\'c7\'b7\'f1\'d3\'d0\'c6\'a5\'c5\'e4\'d6\'d8\'d0\'b4\'b0\'e6\'b1\'be\'b5\'c4\'c9\'f9\'c3\'f7\'a1\'a3\'d5\'e2\'b8\'f6\'bc\'ec\'b2\'e9\'bf\'c9\'d2\'d4\'c8\'b7\'b1\'a3\'c4\'e3\'b5\'c4\'d6\'d8\'d0\'b4\'b6\'a8\'d2\'e5\'ca\'c7\'d5\'fd\'c8\'b7\'b5\'c4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'b7\'c3\'ce\'ca\'b3\'ac\'c0\'e0\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'bc\'b0\'cf\'c2\'b1\'ea
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'b5\'b1\'c4\'e3\'d4\'da\'d7\'d3\'c0\'e0\'d6\'d0\'d6\'d8\'d0\'b4\'b3\'ac\'c0\'e0\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'bb\'f2\'cf\'c2\'b1\'ea\'ca\'b1\'a3\'ac\'d3\'d0\'ca\'b1\'d4\'da\'c4\'e3\'b5\'c4\'d6\'d8\'d0\'b4\'b0\'e6\'b1\'be\'d6\'d0\'ca\'b9\'d3\'c3\'d2\'d1\'be\'ad\'b4\'e6\'d4\'da\'b5\'c4\'b3\'ac\'c0\'e0\'ca\'b5\'cf\'d6\'bb\'e1\'b4\'f3\'d3\'d0\'f1\'d4\'d2\'e6\'a1\'a3\'b1\'c8\'c8\'e7\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'cd\'ea\'c9\'c6\'d2\'d1\'d3\'d0\'ca\'b5\'cf\'d6\'b5\'c4\'d0\'d0\'ce\'aa\'a3\'ac\'bb\'f2\'d4\'da\'d2\'bb\'b8\'f6\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'b1\'e4\'c1\'bf\'d6\'d0\'b4\'e6\'b4\'a2\'d2\'bb\'b8\'f6\'d0\'de\'b8\'c4\'b9\'fd\'b5\'c4\'d6\'b5\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d4\'da\'ba\'cf\'ca\'ca\'b5\'c4\'b5\'d8\'b7\'bd\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'ca\'b9\'d3\'c3
+\f0 super
+\f2 \'c7\'b0\'d7\'ba\'c0\'b4\'b7\'c3\'ce\'ca\'b3\'ac\'c0\'e0\'b0\'e6\'b1\'be\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'bb\'f2\'cf\'c2\'b1\'ea\'a3\'ba
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d4\'da\'b7\'bd\'b7\'a8
+\f0 someMethod()
+\f2 \'b5\'c4\'d6\'d8\'d0\'b4\'ca\'b5\'cf\'d6\'d6\'d0\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd
+\f0 super.someMethod()
+\f2 \'c0\'b4\'b5\'f7\'d3\'c3\'b3\'ac\'c0\'e0\'b0\'e6\'b1\'be\'b5\'c4
+\f0 someMethod()
+\f2 \'b7\'bd\'b7\'a8\'a1\'a3
+\f0 \cf4 \
+\cf2 //
+\f2 \'d4\'da\'ca\'f4\'d0\'d4
+\f0 someProperty
+\f2 \'b5\'c4
+\f0  getter 
+\f2 \'bb\'f2
+\f0  setter 
+\f2 \'b5\'c4\'d6\'d8\'d0\'b4\'ca\'b5\'cf\'d6\'d6\'d0\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd
+\f0 super.someProperty
+\f2 \'c0\'b4\'b7\'c3\'ce\'ca\'b3\'ac\'c0\'e0\'b0\'e6\'b1\'be\'b5\'c4
+\f0 someProperty
+\f2 \'ca\'f4\'d0\'d4\'a1\'a3
+\f0 \cf4 \
+\cf2 //
+\f2 \'d4\'da\'cf\'c2\'b1\'ea\'b5\'c4\'d6\'d8\'d0\'b4\'ca\'b5\'cf\'d6\'d6\'d0\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd
+\f0 super[someIndex]
+\f2 \'c0\'b4\'b7\'c3\'ce\'ca\'b3\'ac\'c0\'e0\'b0\'e6\'b1\'be\'d6\'d0\'b5\'c4\'cf\'e0\'cd\'ac\'cf\'c2\'b1\'ea\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d6\'d8\'d0\'b4\'b7\'bd\'b7\'a8
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d4\'da\'d7\'d3\'c0\'e0\'d6\'d0\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'d6\'d8\'d0\'b4\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'b5\'c0\'fd\'b7\'bd\'b7\'a8\'bb\'f2\'c0\'e0\'b7\'bd\'b7\'a8\'a3\'ac\'cc\'e1\'b9\'a9\'d2\'bb\'b8\'f6\'b6\'a8\'d6\'c6\'bb\'f2\'cc\'e6\'b4\'fa\'b5\'c4\'b7\'bd\'b7\'a8\'ca\'b5\'cf\'d6\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'cf\'c2\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'b6\'a8\'d2\'e5\'c1\'cb
+\f0 Vehicle
+\f2 \'b5\'c4\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'d7\'d3\'c0\'e0\'a3\'ac\'bd\'d0
+\f0 Train
+\f2 \'a3\'ac\'cb\'fc\'d6\'d8\'d0\'b4\'c1\'cb\'b4\'d3
+\f0 Vehicle
+\f2 \'c0\'e0\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4
+\f0 makeNoise()
+\f2 \'b7\'bd\'b7\'a8\'a3\'ba
+\f0 \cf4 \
+\
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Train\cf4 : \cf9 Vehicle\cf4  \{\
+    
+\f1\b \cf5 override
+\f0\b0 \cf4  
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf7 makeNoise\cf4 () \{\
+        print(\cf10 "Choo Choo"\cf4 )\
+    \}\
+\}\
+\
+\
+\cf2 //
+\f2 \'d6\'d8\'d0\'b4\'ca\'f4\'d0\'d4
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'c4\'e3\'bf\'c9\'d2\'d4\'d6\'d8\'d0\'b4\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'b5\'c0\'fd\'ca\'f4\'d0\'d4\'bb\'f2\'c0\'e0\'d0\'cd\'ca\'f4\'d0\'d4\'a3\'ac\'cc\'e1\'b9\'a9\'d7\'d4\'bc\'ba\'b6\'a8\'d6\'c6\'b5\'c4
+\f0  getter 
+\f2 \'ba\'cd
+\f0  setter
+\f2 \'a3\'ac\'bb\'f2\'cc\'ed\'bc\'d3\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'ca\'b9\'d6\'d8\'d0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'bf\'c9\'d2\'d4\'b9\'db\'b2\'ec\'ca\'f4\'d0\'d4\'d6\'b5\'ca\'b2\'c3\'b4\'ca\'b1\'ba\'f2\'b7\'a2\'c9\'fa\'b8\'c4\'b1\'e4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d6\'d8\'d0\'b4\'ca\'f4\'d0\'d4\'b5\'c4
+\f0  Getters 
+\f2 \'ba\'cd
+\f0  Setters\cf4 \
+\
+\cf2 //
+\f2 \'c4\'e3\'bf\'c9\'d2\'d4\'cc\'e1\'b9\'a9\'b6\'a8\'d6\'c6\'b5\'c4
+\f0  getter
+\f2 \'a3\'a8\'bb\'f2
+\f0  setter
+\f2 \'a3\'a9\'c0\'b4\'d6\'d8\'d0\'b4\'c8\'ce\'d2\'e2\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'a3\'ac\'ce\'de\'c2\'db\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'ca\'c7\'b4\'e6\'b4\'a2\'d0\'cd\'b5\'c4\'bb\'b9\'ca\'c7\'bc\'c6\'cb\'e3\'d0\'cd\'b5\'c4\'ca\'f4\'d0\'d4\'a1\'a3\'d7\'d3\'c0\'e0\'b2\'a2\'b2\'bb\'d6\'aa\'b5\'c0\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'ca\'c7\'b4\'e6\'b4\'a2\'d0\'cd\'b5\'c4\'bb\'b9\'ca\'c7\'bc\'c6\'cb\'e3\'d0\'cd\'b5\'c4\'a3\'ac\'cb\'fc\'d6\'bb\'d6\'aa\'b5\'c0\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'bb\'e1\'d3\'d0\'d2\'bb\'b8\'f6\'c3\'fb\'d7\'d6\'ba\'cd\'c0\'e0\'d0\'cd\'a1\'a3\'c4\'e3\'d4\'da\'d6\'d8\'d0\'b4\'d2\'bb\'b8\'f6\'ca\'f4\'d0\'d4\'ca\'b1\'a3\'ac\'b1\'d8\'d0\'e8\'bd\'ab\'cb\'fc\'b5\'c4\'c3\'fb\'d7\'d6\'ba\'cd\'c0\'e0\'d0\'cd\'b6\'bc\'d0\'b4\'b3\'f6\'c0\'b4\'a1\'a3\'d5\'e2\'d1\'f9\'b2\'c5\'c4\'dc\'ca\'b9\'b1\'e0\'d2\'eb\'c6\'f7\'c8\'a5\'bc\'ec\'b2\'e9\'c4\'e3\'d6\'d8\'d0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'ca\'c7\'d3\'eb\'b3\'ac\'c0\'e0\'d6\'d0\'cd\'ac\'c3\'fb\'cd\'ac\'c0\'e0\'d0\'cd\'b5\'c4\'ca\'f4\'d0\'d4\'cf\'e0\'c6\'a5\'c5\'e4\'b5\'c4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'c4\'e3\'bf\'c9\'d2\'d4\'bd\'ab\'d2\'bb\'b8\'f6\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'d6\'bb\'b6\'c1\'ca\'f4\'d0\'d4\'d6\'d8\'d0\'b4\'ce\'aa\'d2\'bb\'b8\'f6\'b6\'c1\'d0\'b4\'ca\'f4\'d0\'d4\'a3\'ac\'d6\'bb\'d0\'e8\'d2\'aa\'d4\'da\'d6\'d8\'d0\'b4\'b0\'e6\'b1\'be\'b5\'c4\'ca\'f4\'d0\'d4\'c0\'ef\'cc\'e1\'b9\'a9
+\f0  getter 
+\f2 \'ba\'cd
+\f0  setter 
+\f2 \'bc\'b4\'bf\'c9\'a1\'a3\'b5\'ab\'ca\'c7\'a3\'ac\'c4\'e3\'b2\'bb\'bf\'c9\'d2\'d4\'bd\'ab\'d2\'bb\'b8\'f6\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'b6\'c1\'d0\'b4\'ca\'f4\'d0\'d4\'d6\'d8\'d0\'b4\'ce\'aa\'d2\'bb\'b8\'f6\'d6\'bb\'b6\'c1\'ca\'f4\'d0\'d4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d7\'a2\'d2\'e2
+\f0 \cf4 \
+\cf2 //
+\f2 \'c8\'e7\'b9\'fb\'c4\'e3\'d4\'da\'d6\'d8\'d0\'b4\'ca\'f4\'d0\'d4\'d6\'d0\'cc\'e1\'b9\'a9\'c1\'cb
+\f0  setter
+\f2 \'a3\'ac\'c4\'c7\'c3\'b4\'c4\'e3\'d2\'b2\'d2\'bb\'b6\'a8\'d2\'aa\'cc\'e1\'b9\'a9
+\f0  getter
+\f2 \'a1\'a3\'c8\'e7\'b9\'fb\'c4\'e3\'b2\'bb\'cf\'eb\'d4\'da\'d6\'d8\'d0\'b4\'b0\'e6\'b1\'be\'d6\'d0\'b5\'c4
+\f0  getter 
+\f2 \'c0\'ef\'d0\'de\'b8\'c4\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'d6\'b5\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'cd\'a8\'b9\'fd
+\f0 super.someProperty
+\f2 \'c0\'b4\'b7\'b5\'bb\'d8\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'d6\'b5\'a3\'ac\'c6\'e4\'d6\'d0
+\f0 someProperty
+\f2 \'ca\'c7\'c4\'e3\'d2\'aa\'d6\'d8\'d0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'b5\'c4\'c3\'fb\'d7\'d6\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d2\'d4\'cf\'c2\'b5\'c4\'c0\'fd\'d7\'d3\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6\'d0\'c2\'c0\'e0\'a3\'ac\'bd\'d0
+\f0 Car
+\f2 \'a3\'ac\'cb\'fc\'ca\'c7
+\f0 Vehicle
+\f2 \'b5\'c4\'d7\'d3\'c0\'e0\'a1\'a3\'d5\'e2\'b8\'f6\'c0\'e0\'d2\'fd\'c8\'eb\'c1\'cb\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'b4\'e6\'b4\'a2\'d0\'cd\'ca\'f4\'d0\'d4\'bd\'d0\'d7\'f6
+\f0 gear
+\f2 \'a3\'ac\'c4\'ac\'c8\'cf\'d6\'b5\'ce\'aa\'d5\'fb\'ca\'fd
+\f0 1
+\f2 \'a1\'a3
+\f0 Car
+\f2 \'c0\'e0\'d6\'d8\'d0\'b4\'c1\'cb\'bc\'cc\'b3\'d0\'d7\'d4
+\f0 Vehicle
+\f2 \'b5\'c4
+\f0 description
+\f2 \'ca\'f4\'d0\'d4\'a3\'ac\'cc\'e1\'b9\'a9\'b0\'fc\'ba\'ac\'b5\'b1\'c7\'b0\'b5\'b5\'ce\'bb\'b5\'c4\'d7\'d4\'b6\'a8\'d2\'e5\'c3\'e8\'ca\'f6\'a3\'ba
+\f0 \cf4 \
+\
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 Car\cf4 : \cf9 Vehicle\cf4  \{\
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 gear\cf4  = \cf8 1\cf4 \
+    
+\f1\b \cf5 override
+\f0\b0 \cf4  
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 description\cf4 : \cf9 String\cf4  \{\
+        
+\f1\b \cf5 return
+\f0\b0 \cf4  
+\f1\b \cf5 super
+\f0\b0 \cf4 .description + \cf10 " in gear \cf4 \\(gear)\cf10 "\cf4 \
+    \}\
+\}\
+\
+\cf2 //
+\f2 \'d6\'d8\'d0\'b4\'b5\'c4
+\f0 description
+\f2 \'ca\'f4\'d0\'d4\'ca\'d7\'cf\'c8\'d2\'aa\'b5\'f7\'d3\'c3
+\f0 super.description
+\f2 \'b7\'b5\'bb\'d8
+\f0 Vehicle
+\f2 \'c0\'e0\'b5\'c4
+\f0 description
+\f2 \'ca\'f4\'d0\'d4\'a1\'a3\'d6\'ae\'ba\'f3\'a3\'ac
+\f0 Car
+\f2 \'c0\'e0\'b0\'e6\'b1\'be\'b5\'c4
+\f0 description
+\f2 \'d4\'da\'c4\'a9\'ce\'b2\'d4\'f6\'bc\'d3\'c1\'cb\'d2\'bb\'d0\'a9\'b6\'ee\'cd\'e2\'b5\'c4\'ce\'c4\'b1\'be\'c0\'b4\'cc\'e1\'b9\'a9\'b9\'d8\'d3\'da\'b5\'b1\'c7\'b0\'b5\'b5\'ce\'bb\'b5\'c4\'d0\'c5\'cf\'a2\'a1\'a3
+\f0 \cf4 \
+\
+\
+\cf2 //
+\f2 \'d6\'d8\'d0\'b4\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'c4\'e3\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'d6\'d8\'d0\'b4\'ca\'f4\'d0\'d4\'ce\'aa\'d2\'bb\'b8\'f6\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'cc\'ed\'bc\'d3\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'a1\'a3\'d5\'e2\'d1\'f9\'d2\'bb\'c0\'b4\'a3\'ac\'b5\'b1\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'d6\'b5\'b7\'a2\'c9\'fa\'b8\'c4\'b1\'e4\'ca\'b1\'a3\'ac\'c4\'e3\'be\'cd\'bb\'e1\'b1\'bb\'cd\'a8\'d6\'aa\'b5\'bd\'a3\'ac\'ce\'de\'c2\'db\'c4\'c7\'b8\'f6\'ca\'f4\'d0\'d4\'d4\'ad\'b1\'be\'ca\'c7\'c8\'e7\'ba\'ce\'ca\'b5\'cf\'d6\'b5\'c4\'a1\'a3\'b9\'d8\'d3\'da\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'b5\'c4\'b8\'fc\'b6\'e0\'c4\'da\'c8\'dd\'a3\'ac\'c7\'eb\'bf\'b4\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'d7\'a2\'d2\'e2
+\f0 \cf4 \
+\cf2 //
+\f2 \'c4\'e3\'b2\'bb\'bf\'c9\'d2\'d4\'ce\'aa\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'b3\'a3\'c1\'bf\'b4\'e6\'b4\'a2\'d0\'cd\'ca\'f4\'d0\'d4\'bb\'f2\'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'d6\'bb\'b6\'c1\'bc\'c6\'cb\'e3\'d0\'cd\'ca\'f4\'d0\'d4\'cc\'ed\'bc\'d3\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'a1\'a3\'d5\'e2\'d0\'a9\'ca\'f4\'d0\'d4\'b5\'c4\'d6\'b5\'ca\'c7\'b2\'bb\'bf\'c9\'d2\'d4\'b1\'bb\'c9\'e8\'d6\'c3\'b5\'c4\'a3\'ac\'cb\'f9\'d2\'d4\'a3\'ac\'ce\'aa\'cb\'fc\'c3\'c7\'cc\'e1\'b9\'a9
+\f0 willSet
+\f2 \'bb\'f2
+\f0 didSet
+\f2 \'ca\'b5\'cf\'d6\'ca\'c7\'b2\'bb\'c7\'a1\'b5\'b1\'a1\'a3
+\f0 \cf4 \
+\cf2 //
+\f2 \'b4\'cb\'cd\'e2\'bb\'b9\'d2\'aa\'d7\'a2\'d2\'e2\'a3\'ac\'c4\'e3\'b2\'bb\'bf\'c9\'d2\'d4\'cd\'ac\'ca\'b1\'cc\'e1\'b9\'a9\'d6\'d8\'d0\'b4\'b5\'c4
+\f0  setter 
+\f2 \'ba\'cd\'d6\'d8\'d0\'b4\'b5\'c4\'ca\'f4\'d0\'d4\'b9\'db\'b2\'ec\'c6\'f7\'a1\'a3\'c8\'e7\'b9\'fb\'c4\'e3\'cf\'eb\'b9\'db\'b2\'ec\'ca\'f4\'d0\'d4\'d6\'b5\'b5\'c4\'b1\'e4\'bb\'af\'a3\'ac\'b2\'a2\'c7\'d2\'c4\'e3\'d2\'d1\'be\'ad\'ce\'aa\'c4\'c7\'b8\'f6\'ca\'f4\'d0\'d4\'cc\'e1\'b9\'a9\'c1\'cb\'b6\'a8\'d6\'c6\'b5\'c4
+\f0  setter
+\f2 \'a3\'ac\'c4\'c7\'c3\'b4\'c4\'e3\'d4\'da
+\f0  setter 
+\f2 \'d6\'d0\'be\'cd\'bf\'c9\'d2\'d4\'b9\'db\'b2\'ec\'b5\'bd\'c8\'ce\'ba\'ce\'d6\'b5\'b1\'e4\'bb\'af\'c1\'cb\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'cf\'c2\'c3\'e6\'b5\'c4\'c0\'fd\'d7\'d3\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6\'d0\'c2\'c0\'e0\'bd\'d0
+\f0 AutomaticCar
+\f2 \'a3\'ac\'cb\'fc\'ca\'c7
+\f0 Car
+\f2 \'b5\'c4\'d7\'d3\'c0\'e0\'a1\'a3
+\f0 AutomaticCar
+\f2 \'b1\'ed\'ca\'be\'d7\'d4\'b6\'af\'b5\'b2\'c6\'fb\'b3\'b5\'a3\'ac\'cb\'fc\'bf\'c9\'d2\'d4\'b8\'f9\'be\'dd\'b5\'b1\'c7\'b0\'b5\'c4\'cb\'d9\'b6\'c8\'d7\'d4\'b6\'af\'d1\'a1\'d4\'f1\'ba\'cf\'ca\'ca\'b5\'c4\'b5\'b2\'ce\'bb
+\f0 :\cf4 \
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 AutomaticCar\cf4 : \cf9 Car\cf4  \{\
+    
+\f1\b \cf5 override
+\f0\b0 \cf4  
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf7 currentSpeed\cf4 : \cf9 Double\cf4  \{\
+        
+\f1\b \cf5 didSet
+\f0\b0 \cf4  \{\
+            gear = Int(currentSpeed / \cf8 10.0\cf4 ) + \cf8 1\cf4 \
+        \}\
+    \}\
+\}\
+\
+\
+\cf2 //
+\f2 \'b7\'c0\'d6\'b9\'d6\'d8\'d0\'b4
+\f0 \cf4 \
+\cf2 //
+\f2 \'c4\'e3\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'b0\'d1\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'bb\'f2\'cf\'c2\'b1\'ea\'b1\'ea\'bc\'c7\'ce\'aa
+\f0 final
+\f2 \'c0\'b4\'b7\'c0\'d6\'b9\'cb\'fc\'c3\'c7\'b1\'bb\'d6\'d8\'d0\'b4\'a3\'ac\'d6\'bb\'d0\'e8\'d2\'aa\'d4\'da\'c9\'f9\'c3\'f7\'b9\'d8\'bc\'fc\'d7\'d6\'c7\'b0\'bc\'d3\'c9\'cf
+\f0 final
+\f2 \'d0\'de\'ca\'ce\'b7\'fb\'bc\'b4\'bf\'c9\'a3\'a8\'c0\'fd\'c8\'e7\'a3\'ba
+\f0 final var
+\f2 \'a3\'ac
+\f0 final func
+\f2 \'a3\'ac
+\f0 final class func
+\f2 \'a3\'ac\'d2\'d4\'bc\'b0
+\f0 final subscript
+\f2 \'a3\'a9\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'c8\'e7\'b9\'fb\'c4\'e3\'d6\'d8\'d0\'b4\'c1\'cb\'b4\'f8\'d3\'d0
+\f0 final
+\f2 \'b1\'ea\'bc\'c7\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'bb\'f2\'cf\'c2\'b1\'ea\'a3\'ac\'d4\'da\'b1\'e0\'d2\'eb\'ca\'b1\'bb\'e1\'b1\'a8\'b4\'ed\'a1\'a3\'d4\'da\'c0\'e0\'c0\'a9\'d5\'b9\'d6\'d0\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ca\'f4\'d0\'d4\'bb\'f2\'cf\'c2\'b1\'ea\'d2\'b2\'bf\'c9\'d2\'d4\'d4\'da\'c0\'a9\'d5\'b9\'b5\'c4\'b6\'a8\'d2\'e5\'c0\'ef\'b1\'ea\'bc\'c7\'ce\'aa
+\f0  final 
+\f2 \'b5\'c4\'a1\'a3
+\f0 \cf4 \
+\
+\cf2 //
+\f2 \'c4\'e3\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'d4\'da\'b9\'d8\'bc\'fc\'d7\'d6
+\f0 class
+\f2 \'c7\'b0\'cc\'ed\'bc\'d3
+\f0 final
+\f2 \'d0\'de\'ca\'ce\'b7\'fb\'a3\'a8
+\f0 final class
+\f2 \'a3\'a9\'c0\'b4\'bd\'ab\'d5\'fb\'b8\'f6\'c0\'e0\'b1\'ea\'bc\'c7\'ce\'aa
+\f0  final 
+\f2 \'b5\'c4\'a1\'a3\'d5\'e2\'d1\'f9\'b5\'c4\'c0\'e0\'ca\'c7\'b2\'bb\'bf\'c9\'b1\'bb\'bc\'cc\'b3\'d0\'b5\'c4\'a3\'ac\'ca\'d4\'cd\'bc\'bc\'cc\'b3\'d0\'d5\'e2\'d1\'f9\'b5\'c4\'c0\'e0\'bb\'e1\'b5\'bc\'d6\'c2\'b1\'e0\'d2\'eb\'b1\'a8\'b4\'ed\'a1\'a3
+\f0 \cf4 \
+\
+\
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf6 InheritUsage\cf4 : \cf9 NSObject\cf4  \{\
+    \
+    
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf7 execute\cf4 () \{\
+        \cf2 //
+\f2 \'c4\'fa\'bf\'c9\'d2\'d4\'d3\'c3\'b3\'f5\'ca\'bc\'bb\'af\'d3\'ef\'b7\'a8\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6
+\f0 Vehicle
+\f2 \'b5\'c4\'d0\'c2\'ca\'b5\'c0\'fd\'a3\'ac\'bc\'b4\'c0\'e0\'c3\'fb\'ba\'f3\'c3\'e6\'b8\'fa\'d2\'bb\'b8\'f6\'bf\'d5\'c0\'a8\'ba\'c5\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  someVehicle = Vehicle()\
+        \
+        \cf2 //
+\f2 \'cf\'d6\'d4\'da\'d2\'d1\'be\'ad\'b4\'b4\'bd\'a8\'c1\'cb\'d2\'bb\'b8\'f6
+\f0 Vehicle
+\f2 \'b5\'c4\'d0\'c2\'ca\'b5\'c0\'fd\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'b7\'c3\'ce\'ca\'cb\'fc\'b5\'c4
+\f0 description
+\f2 \'ca\'f4\'d0\'d4\'c0\'b4\'b4\'f2\'d3\'a1\'b3\'b5\'c1\'be\'b5\'c4\'b5\'b1\'c7\'b0\'cb\'d9\'b6\'c8\'a3\'ba
+\f0 \cf4 \
+        print(\cf10 "Vehicle: \cf4 \\(someVehicle.description)\cf10 "\cf4 )\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  "Vehicle: traveling at 0.0 miles per hour"\cf4 \
+        \
+        \cf2 //
+\f2 \'d0\'c2\'b5\'c4
+\f0 Bicycle
+\f2 \'c0\'e0\'d7\'d4\'b6\'af\'bb\'f1\'b5\'c3
+\f0 Vehicle
+\f2 \'c0\'e0\'b5\'c4\'cb\'f9\'d3\'d0\'cc\'d8\'d0\'d4\'a3\'ac\'b1\'c8\'c8\'e7
+\f0 currentSpeed
+\f2 \'ba\'cd
+\f0 description
+\f2 \'ca\'f4\'d0\'d4\'a3\'ac\'bb\'b9\'d3\'d0\'cb\'fc\'b5\'c4
+\f0 makeNoise()
+\f2 \'b7\'bd\'b7\'a8\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'b3\'fd\'c1\'cb\'cb\'fc\'cb\'f9\'bc\'cc\'b3\'d0\'b5\'c4\'cc\'d8\'d0\'d4\'a3\'ac
+\f0 Bicycle
+\f2 \'c0\'e0\'bb\'b9\'b6\'a8\'d2\'e5\'c1\'cb\'d2\'bb\'b8\'f6\'c4\'ac\'c8\'cf\'d6\'b5\'ce\'aa
+\f0 false
+\f2 \'b5\'c4\'b4\'e6\'b4\'a2\'d0\'cd\'ca\'f4\'d0\'d4
+\f0 hasBasket
+\f2 \'a3\'a8\'ca\'f4\'d0\'d4\'cd\'c6\'b6\'cf\'ce\'aa
+\f0 Bool
+\f2 \'a3\'a9\'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'c4\'ac\'c8\'cf\'c7\'e9\'bf\'f6\'cf\'c2\'a3\'ac\'c4\'e3\'b4\'b4\'bd\'a8\'c8\'ce\'ba\'ce\'d0\'c2\'b5\'c4
+\f0 Bicycle
+\f2 \'ca\'b5\'c0\'fd\'bd\'ab\'b2\'bb\'bb\'e1\'d3\'d0\'d2\'bb\'b8\'f6\'c0\'ba\'d7\'d3\'a3\'a8\'bc\'b4
+\f0 hasBasket
+\f2 \'ca\'f4\'d0\'d4\'c4\'ac\'c8\'cf\'ce\'aa
+\f0 false
+\f2 \'a3\'a9\'a3\'ac\'b4\'b4\'bd\'a8\'b8\'c3\'ca\'b5\'c0\'fd\'d6\'ae\'ba\'f3\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'ce\'aa\'cc\'d8\'b6\'a8\'b5\'c4
+\f0 Bicycle
+\f2 \'ca\'b5\'c0\'fd\'c9\'e8\'d6\'c3
+\f0 hasBasket
+\f2 \'ca\'f4\'d0\'d4\'ce\'aa
+\f0 ture
+\f2 \'a3\'ba
+\f0 \cf4 \
+        \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  bicycle = Bicycle()\
+        bicycle.hasBasket = 
+\f1\b \cf5 true
+\f0\b0 \cf4 \
+        \cf2 //
+\f2 \'c4\'e3\'bb\'b9\'bf\'c9\'d2\'d4\'d0\'de\'b8\'c4
+\f0 Bicycle
+\f2 \'ca\'b5\'c0\'fd\'cb\'f9\'bc\'cc\'b3\'d0\'b5\'c4
+\f0 currentSpeed
+\f2 \'ca\'f4\'d0\'d4\'a3\'ac\'ba\'cd\'b2\'e9\'d1\'af\'ca\'b5\'c0\'fd\'cb\'f9\'bc\'cc\'b3\'d0\'b5\'c4
+\f0 description
+\f2 \'ca\'f4\'d0\'d4\'a3\'ba
+\f0 \cf4 \
+        \
+        bicycle.currentSpeed = \cf8 15.0\cf4 \
+        print(\cf10 "Bicycle: \cf4 \\(bicycle.description)\cf10 "\cf4 )\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  "Bicycle: traveling at 15.0 miles per hour"\cf4 \
+        \
+        \cf2 //Tandem
+\f2 \'b4\'d3
+\f0 Bicycle
+\f2 \'bc\'cc\'b3\'d0\'c1\'cb\'cb\'f9\'d3\'d0\'b5\'c4\'ca\'f4\'d0\'d4\'d3\'eb\'b7\'bd\'b7\'a8\'a3\'ac\'d5\'e2\'d3\'d6\'ca\'b9\'cb\'fc\'cd\'ac\'ca\'b1\'bc\'cc\'b3\'d0\'c1\'cb
+\f0 Vehicle
+\f2 \'b5\'c4\'cb\'f9\'d3\'d0\'ca\'f4\'d0\'d4\'d3\'eb\'b7\'bd\'b7\'a8\'a1\'a3
+\f0 Tandem
+\f2 \'d2\'b2\'d4\'f6\'bc\'d3\'c1\'cb\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'bd\'d0\'d7\'f6
+\f0 currentNumberOfPassengers
+\f2 \'b5\'c4\'b4\'e6\'b4\'a2\'d0\'cd\'ca\'f4\'d0\'d4\'a3\'ac\'c4\'ac\'c8\'cf\'d6\'b5\'ce\'aa
+\f0 0
+\f2 \'a1\'a3
+\f0 \cf4 \
+        \
+        \cf2 //
+\f2 \'c8\'e7\'b9\'fb\'c4\'e3\'b4\'b4\'bd\'a8\'c1\'cb\'d2\'bb\'b8\'f6
+\f0 Tandem
+\f2 \'b5\'c4\'ca\'b5\'c0\'fd\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3\'cb\'fc\'cb\'f9\'d3\'d0\'b5\'c4\'d0\'c2\'ca\'f4\'d0\'d4\'ba\'cd\'bc\'cc\'b3\'d0\'b5\'c4\'ca\'f4\'d0\'d4\'a3\'ac\'bb\'b9\'c4\'dc\'b2\'e9\'d1\'af\'b4\'d3
+\f0 Vehicle
+\f2 \'bc\'cc\'b3\'d0\'c0\'b4\'b5\'c4\'d6\'bb\'b6\'c1\'ca\'f4\'d0\'d4
+\f0 description
+\f2 \'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  tandem = Tandem()\
+        tandem.hasBasket = 
+\f1\b \cf5 true
+\f0\b0 \cf4 \
+        tandem.currentNumberOfPassengers = \cf8 2\cf4 \
+        tandem.currentSpeed = \cf8 22.0\cf4 \
+        print(\cf10 "Tandem: \cf4 \\(tandem.description)\cf10 "\cf4 )\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1\'a3\'ba
+\f0 "Tandem: traveling at 22.0 miles per hour"\cf4 \
+        \
+        \cf2 //
+\f2 \'c8\'e7\'b9\'fb\'c4\'e3\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6
+\f0 Train
+\f2 \'b5\'c4\'d0\'c2\'ca\'b5\'c0\'fd\'a3\'ac\'b2\'a2\'b5\'f7\'d3\'c3\'c1\'cb\'cb\'fc\'b5\'c4
+\f0 makeNoise()
+\f2 \'b7\'bd\'b7\'a8\'a3\'ac\'c4\'e3\'be\'cd\'bb\'e1\'b7\'a2\'cf\'d6
+\f0 Train
+\f2 \'b0\'e6\'b1\'be\'b5\'c4\'b7\'bd\'b7\'a8\'b1\'bb\'b5\'f7\'d3\'c3\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  train = Train()\
+        train.makeNoise()\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  "Choo Choo"\cf4 \
+        \
+        \cf2 //
+\f2 \'b9\'fb\'c4\'e3\'b4\'b4\'bd\'a8\'c1\'cb
+\f0 Car
+\f2 \'b5\'c4\'ca\'b5\'c0\'fd\'b2\'a2\'c7\'d2\'c9\'e8\'d6\'c3\'c1\'cb\'cb\'fc\'b5\'c4
+\f0 gear
+\f2 \'ba\'cd
+\f0 currentSpeed
+\f2 \'ca\'f4\'d0\'d4\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'bf\'b4\'b5\'bd\'cb\'fc\'b5\'c4
+\f0 description
+\f2 \'b7\'b5\'bb\'d8\'c1\'cb
+\f0 Car
+\f2 \'d6\'d0\'b5\'c4\'d7\'d4\'b6\'a8\'d2\'e5\'c3\'e8\'ca\'f6\'a3\'ba
+\f0 \cf4 \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  car = Car()\
+        car.currentSpeed = \cf8 25.0\cf4 \
+        car.gear = \cf8 3\cf4 \
+        print(\cf10 "Car: \cf4 \\(car.description)\cf10 "\cf4 )\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  "Car: traveling at 25.0 miles per hour in gear 3"\cf4 \
+        \
+        \cf2 //
+\f2 \'cb\'d9\'b6\'c8\'ce\'aa
+\f0 35.0
+\f2 \'ca\'b1\'a3\'ac\'b5\'b2\'ce\'bb\'ce\'aa
+\f0 4
+\f2 \'a3\'ba
+\f0 \cf4 \
+        \
+        
+\f1\b \cf5 let
+\f0\b0 \cf4  automatic = AutomaticCar()\
+        automatic.currentSpeed = \cf8 35.0\cf4 \
+        print(\cf10 "AutomaticCar: \cf4 \\(automatic.description)\cf10 "\cf4 )\
+        \cf2 // 
+\f2 \'b4\'f2\'d3\'a1
+\f0  "AutomaticCar: traveling at 35.0 miles per hour in gear 4"\cf4 \
+    \}\
+    \
+\}\
+}

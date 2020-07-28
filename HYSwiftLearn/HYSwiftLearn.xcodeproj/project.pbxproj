@@ -7,12 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0523861124CFFA8200350345 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 052385DF24CFFA8200350345 /* README.md */; };
+		0523861224CFFA8200350345 /* HYSwiftLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385E224CFFA8200350345 /* HYSwiftLearnUITests.swift */; };
+		0523861324CFFA8200350345 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052385E324CFFA8200350345 /* Info.plist */; };
+		0523861424CFFA8200350345 /* 下标.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 052385E524CFFA8200350345 /* 下标.rtf */; };
+		0523861524CFFA8200350345 /* 集合类型.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 052385E624CFFA8200350345 /* 集合类型.rtf */; };
+		0523861624CFFA8200350345 /* 基本运算符.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 052385E724CFFA8200350345 /* 基本运算符.rtf */; };
+		0523861724CFFA8200350345 /* HYSwiftLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385E824CFFA8200350345 /* HYSwiftLearnTests.swift */; };
+		0523861824CFFA8200350345 /* 属性.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 052385E924CFFA8200350345 /* 属性.rtf */; };
+		0523861924CFFA8200350345 /* 错误处理.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 052385EA24CFFA8200350345 /* 错误处理.rtf */; };
+		0523861A24CFFA8200350345 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052385EB24CFFA8200350345 /* Info.plist */; };
+		0523861B24CFFA8200350345 /* swift基础部分.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 052385EC24CFFA8200350345 /* swift基础部分.rtf */; };
+		0523861C24CFFA8200350345 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385F224CFFA8200350345 /* HomeViewController.swift */; };
+		0523861D24CFFA8200350345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052385F324CFFA8200350345 /* Assets.xcassets */; };
+		0523861E24CFFA8200350345 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385F524CFFA8200350345 /* DiscoverViewController.swift */; };
+		0523861F24CFFA8200350345 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385F724CFFA8200350345 /* MessageViewController.swift */; };
+		0523862024CFFA8200350345 /* ReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385F924CFFA8200350345 /* ReleaseViewController.swift */; };
+		0523862124CFFA8200350345 /* CamptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385FA24CFFA8200350345 /* CamptureViewController.swift */; };
+		0523862224CFFA8200350345 /* SwiftCamBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385FC24CFFA8200350345 /* SwiftCamBtn.swift */; };
+		0523862324CFFA8200350345 /* CamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052385FD24CFFA8200350345 /* CamButton.swift */; };
+		0523862424CFFA8200350345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052385FE24CFFA8200350345 /* LaunchScreen.storyboard */; };
+		0523862524CFFA8200350345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0523860024CFFA8200350345 /* Main.storyboard */; };
+		0523862624CFFA8200350345 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523860324CFFA8200350345 /* ProfileViewController.swift */; };
+		0523862724CFFA8200350345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523860424CFFA8200350345 /* AppDelegate.swift */; };
+		0523862824CFFA8200350345 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523860624CFFA8200350345 /* MainViewController.swift */; };
+		0523862924CFFA8200350345 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0523860824CFFA8200350345 /* MainVCSettings.json */; };
+		0523862A24CFFA8200350345 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0523860924CFFA8200350345 /* Info.plist */; };
 		055B061323B0A60B001D751B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B061223B0A60B001D751B /* AppDelegate.swift */; };
 		055B061A23B0A60B001D751B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055B061823B0A60B001D751B /* Main.storyboard */; };
 		055B061C23B0A60C001D751B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055B061B23B0A60C001D751B /* Assets.xcassets */; };
 		055B061F23B0A60C001D751B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055B061D23B0A60C001D751B /* LaunchScreen.storyboard */; };
 		055B062A23B0A60C001D751B /* HYSwiftLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B062923B0A60C001D751B /* HYSwiftLearnTests.swift */; };
 		055B063523B0A60C001D751B /* HYSwiftLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B063423B0A60C001D751B /* HYSwiftLearnUITests.swift */; };
+		0582829A24CFFDBA009F34F6 /* 函数.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828224CFFDB8009F34F6 /* 函数.rtf */; };
+		0582829B24CFFDBA009F34F6 /* 泛型.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828324CFFDB8009F34F6 /* 泛型.rtf */; };
+		0582829C24CFFDBA009F34F6 /* 可选链.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828424CFFDB8009F34F6 /* 可选链.rtf */; };
+		0582829D24CFFDBA009F34F6 /* 集合类型.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828524CFFDB8009F34F6 /* 集合类型.rtf */; };
+		0582829E24CFFDBA009F34F6 /* 方法.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828624CFFDB9009F34F6 /* 方法.rtf */; };
+		0582829F24CFFDBA009F34F6 /* 错误处理.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828724CFFDB9009F34F6 /* 错误处理.rtf */; };
+		058282A024CFFDBA009F34F6 /* 枚举.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828824CFFDB9009F34F6 /* 枚举.rtf */; };
+		058282A124CFFDBA009F34F6 /* 字符串.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828924CFFDB9009F34F6 /* 字符串.rtf */; };
+		058282A224CFFDBA009F34F6 /* 基本运算符.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828A24CFFDB9009F34F6 /* 基本运算符.rtf */; };
+		058282A324CFFDBA009F34F6 /* 下标.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828B24CFFDB9009F34F6 /* 下标.rtf */; };
+		058282A424CFFDBA009F34F6 /* swift基础部分.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828C24CFFDB9009F34F6 /* swift基础部分.rtf */; };
+		058282A524CFFDBA009F34F6 /* 闭包.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828D24CFFDB9009F34F6 /* 闭包.rtf */; };
+		058282A624CFFDBA009F34F6 /* 高级运算符.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828E24CFFDB9009F34F6 /* 高级运算符.rtf */; };
+		058282A724CFFDBA009F34F6 /* 扩展.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828F24CFFDB9009F34F6 /* 扩展.rtf */; };
+		058282A824CFFDBA009F34F6 /* 控制流.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829024CFFDB9009F34F6 /* 控制流.rtf */; };
+		058282A924CFFDBA009F34F6 /* 析构过程.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829124CFFDB9009F34F6 /* 析构过程.rtf */; };
+		058282AA24CFFDBA009F34F6 /* 类型转换.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829224CFFDB9009F34F6 /* 类型转换.rtf */; };
+		058282AB24CFFDBA009F34F6 /* 嵌套类型.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829324CFFDB9009F34F6 /* 嵌套类型.rtf */; };
+		058282AC24CFFDBA009F34F6 /* 类型和结构.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829424CFFDB9009F34F6 /* 类型和结构.rtf */; };
+		058282AD24CFFDBA009F34F6 /* 协议.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829524CFFDB9009F34F6 /* 协议.rtf */; };
+		058282AE24CFFDBA009F34F6 /* iOS技术知识.png in Resources */ = {isa = PBXBuildFile; fileRef = 0582829624CFFDBA009F34F6 /* iOS技术知识.png */; };
+		058282AF24CFFDBA009F34F6 /* 属性.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829724CFFDBA009F34F6 /* 属性.rtf */; };
+		058282B024CFFDBA009F34F6 /* 构造过程.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829824CFFDBA009F34F6 /* 构造过程.rtf */; };
+		058282B124CFFDBA009F34F6 /* 继承.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582829924CFFDBA009F34F6 /* 继承.rtf */; };
 		0590B7B02472605800092CAB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7AF2472605800092CAB /* MainViewController.swift */; };
 		0590B7B2247262B300092CAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B1247262B300092CAB /* HomeViewController.swift */; };
 		0590B7B4247262C500092CAB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7B3247262C500092CAB /* MessageViewController.swift */; };
@@ -43,6 +93,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052385DF24CFFA8200350345 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		052385E224CFFA8200350345 /* HYSwiftLearnUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYSwiftLearnUITests.swift; sourceTree = "<group>"; };
+		052385E324CFFA8200350345 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052385E524CFFA8200350345 /* 下标.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "下标.rtf"; sourceTree = "<group>"; };
+		052385E624CFFA8200350345 /* 集合类型.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "集合类型.rtf"; sourceTree = "<group>"; };
+		052385E724CFFA8200350345 /* 基本运算符.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "基本运算符.rtf"; sourceTree = "<group>"; };
+		052385E824CFFA8200350345 /* HYSwiftLearnTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYSwiftLearnTests.swift; sourceTree = "<group>"; };
+		052385E924CFFA8200350345 /* 属性.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "属性.rtf"; sourceTree = "<group>"; };
+		052385EA24CFFA8200350345 /* 错误处理.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "错误处理.rtf"; sourceTree = "<group>"; };
+		052385EB24CFFA8200350345 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052385EC24CFFA8200350345 /* swift基础部分.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "swift基础部分.rtf"; sourceTree = "<group>"; };
+		052385ED24CFFA8200350345 /* HYSwiftLearn.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HYSwiftLearn.xcodeproj; sourceTree = "<group>"; };
+		052385F224CFFA8200350345 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		052385F324CFFA8200350345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		052385F524CFFA8200350345 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		052385F724CFFA8200350345 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		052385F924CFFA8200350345 /* ReleaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseViewController.swift; sourceTree = "<group>"; };
+		052385FA24CFFA8200350345 /* CamptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamptureViewController.swift; sourceTree = "<group>"; };
+		052385FC24CFFA8200350345 /* SwiftCamBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCamBtn.swift; sourceTree = "<group>"; };
+		052385FD24CFFA8200350345 /* CamButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamButton.swift; sourceTree = "<group>"; };
+		052385FF24CFFA8200350345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0523860124CFFA8200350345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0523860324CFFA8200350345 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0523860424CFFA8200350345 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0523860624CFFA8200350345 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0523860824CFFA8200350345 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		0523860924CFFA8200350345 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		055B060F23B0A60B001D751B /* HYSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055B061223B0A60B001D751B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		055B061923B0A60B001D751B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +132,30 @@
 		055B063023B0A60C001D751B /* HYSwiftLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYSwiftLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055B063423B0A60C001D751B /* HYSwiftLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYSwiftLearnUITests.swift; sourceTree = "<group>"; };
 		055B063623B0A60C001D751B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0582828224CFFDB8009F34F6 /* 函数.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "函数.rtf"; sourceTree = "<group>"; };
+		0582828324CFFDB8009F34F6 /* 泛型.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "泛型.rtf"; sourceTree = "<group>"; };
+		0582828424CFFDB8009F34F6 /* 可选链.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "可选链.rtf"; sourceTree = "<group>"; };
+		0582828524CFFDB8009F34F6 /* 集合类型.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "集合类型.rtf"; sourceTree = "<group>"; };
+		0582828624CFFDB9009F34F6 /* 方法.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "方法.rtf"; sourceTree = "<group>"; };
+		0582828724CFFDB9009F34F6 /* 错误处理.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "错误处理.rtf"; sourceTree = "<group>"; };
+		0582828824CFFDB9009F34F6 /* 枚举.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "枚举.rtf"; sourceTree = "<group>"; };
+		0582828924CFFDB9009F34F6 /* 字符串.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "字符串.rtf"; sourceTree = "<group>"; };
+		0582828A24CFFDB9009F34F6 /* 基本运算符.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "基本运算符.rtf"; sourceTree = "<group>"; };
+		0582828B24CFFDB9009F34F6 /* 下标.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "下标.rtf"; sourceTree = "<group>"; };
+		0582828C24CFFDB9009F34F6 /* swift基础部分.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "swift基础部分.rtf"; sourceTree = "<group>"; };
+		0582828D24CFFDB9009F34F6 /* 闭包.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "闭包.rtf"; sourceTree = "<group>"; };
+		0582828E24CFFDB9009F34F6 /* 高级运算符.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "高级运算符.rtf"; sourceTree = "<group>"; };
+		0582828F24CFFDB9009F34F6 /* 扩展.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "扩展.rtf"; sourceTree = "<group>"; };
+		0582829024CFFDB9009F34F6 /* 控制流.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "控制流.rtf"; sourceTree = "<group>"; };
+		0582829124CFFDB9009F34F6 /* 析构过程.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "析构过程.rtf"; sourceTree = "<group>"; };
+		0582829224CFFDB9009F34F6 /* 类型转换.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "类型转换.rtf"; sourceTree = "<group>"; };
+		0582829324CFFDB9009F34F6 /* 嵌套类型.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "嵌套类型.rtf"; sourceTree = "<group>"; };
+		0582829424CFFDB9009F34F6 /* 类型和结构.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "类型和结构.rtf"; sourceTree = "<group>"; };
+		0582829524CFFDB9009F34F6 /* 协议.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "协议.rtf"; sourceTree = "<group>"; };
+		0582829624CFFDBA009F34F6 /* iOS技术知识.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS技术知识.png"; sourceTree = "<group>"; };
+		0582829724CFFDBA009F34F6 /* 属性.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "属性.rtf"; sourceTree = "<group>"; };
+		0582829824CFFDBA009F34F6 /* 构造过程.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "构造过程.rtf"; sourceTree = "<group>"; };
+		0582829924CFFDBA009F34F6 /* 继承.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "继承.rtf"; sourceTree = "<group>"; };
 		0590B7AF2472605800092CAB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0590B7B1247262B300092CAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0590B7B3247262C500092CAB /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +193,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052385DE24CFFA8200350345 /* HYSwiftLearn */ = {
+			isa = PBXGroup;
+			children = (
+				052385DF24CFFA8200350345 /* README.md */,
+				052385E024CFFA8200350345 /* HYSwiftLearn */,
+			);
+			name = HYSwiftLearn;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		052385E024CFFA8200350345 /* HYSwiftLearn */ = {
+			isa = PBXGroup;
+			children = (
+				052385E124CFFA8200350345 /* HYSwiftLearnUITests */,
+				052385E424CFFA8200350345 /* HYSwiftLearnTests */,
+				052385ED24CFFA8200350345 /* HYSwiftLearn.xcodeproj */,
+				052385F024CFFA8200350345 /* HYSwiftLearn */,
+			);
+			path = HYSwiftLearn;
+			sourceTree = "<group>";
+		};
+		052385E124CFFA8200350345 /* HYSwiftLearnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				052385E224CFFA8200350345 /* HYSwiftLearnUITests.swift */,
+				052385E324CFFA8200350345 /* Info.plist */,
+			);
+			path = HYSwiftLearnUITests;
+			sourceTree = "<group>";
+		};
+		052385E424CFFA8200350345 /* HYSwiftLearnTests */ = {
+			isa = PBXGroup;
+			children = (
+				052385E524CFFA8200350345 /* 下标.rtf */,
+				052385E624CFFA8200350345 /* 集合类型.rtf */,
+				052385E724CFFA8200350345 /* 基本运算符.rtf */,
+				052385E824CFFA8200350345 /* HYSwiftLearnTests.swift */,
+				052385E924CFFA8200350345 /* 属性.rtf */,
+				052385EA24CFFA8200350345 /* 错误处理.rtf */,
+				052385EB24CFFA8200350345 /* Info.plist */,
+				052385EC24CFFA8200350345 /* swift基础部分.rtf */,
+			);
+			path = HYSwiftLearnTests;
+			sourceTree = "<group>";
+		};
+		052385EE24CFFA8200350345 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		052385F024CFFA8200350345 /* HYSwiftLearn */ = {
+			isa = PBXGroup;
+			children = (
+				052385F124CFFA8200350345 /* Home */,
+				052385F324CFFA8200350345 /* Assets.xcassets */,
+				052385F424CFFA8200350345 /* Discovery */,
+				052385F624CFFA8200350345 /* Message */,
+				052385F824CFFA8200350345 /* Release */,
+				052385FE24CFFA8200350345 /* LaunchScreen.storyboard */,
+				0523860024CFFA8200350345 /* Main.storyboard */,
+				0523860224CFFA8200350345 /* Prolifle */,
+				0523860424CFFA8200350345 /* AppDelegate.swift */,
+				0523860524CFFA8200350345 /* Main */,
+				0523860924CFFA8200350345 /* Info.plist */,
+			);
+			path = HYSwiftLearn;
+			sourceTree = "<group>";
+		};
+		052385F124CFFA8200350345 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				052385F224CFFA8200350345 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		052385F424CFFA8200350345 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				052385F524CFFA8200350345 /* DiscoverViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		052385F624CFFA8200350345 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				052385F724CFFA8200350345 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		052385F824CFFA8200350345 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				052385F924CFFA8200350345 /* ReleaseViewController.swift */,
+				052385FA24CFFA8200350345 /* CamptureViewController.swift */,
+				052385FB24CFFA8200350345 /* CamtrueToos */,
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		052385FB24CFFA8200350345 /* CamtrueToos */ = {
+			isa = PBXGroup;
+			children = (
+				052385FC24CFFA8200350345 /* SwiftCamBtn.swift */,
+				052385FD24CFFA8200350345 /* CamButton.swift */,
+			);
+			path = CamtrueToos;
+			sourceTree = "<group>";
+		};
+		0523860224CFFA8200350345 /* Prolifle */ = {
+			isa = PBXGroup;
+			children = (
+				0523860324CFFA8200350345 /* ProfileViewController.swift */,
+			);
+			path = Prolifle;
+			sourceTree = "<group>";
+		};
+		0523860524CFFA8200350345 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0523860624CFFA8200350345 /* MainViewController.swift */,
+				0523860724CFFA8200350345 /* Resource */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0523860724CFFA8200350345 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0523860824CFFA8200350345 /* MainVCSettings.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		055B060623B0A60B001D751B = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				055B062923B0A60C001D751B /* HYSwiftLearnTests.swift */,
+				052385DE24CFFA8200350345 /* HYSwiftLearn */,
 				055B062B23B0A60C001D751B /* Info.plist */,
 			);
 			path = HYSwiftLearnTests;
@@ -144,6 +382,30 @@
 			children = (
 				055B063423B0A60C001D751B /* HYSwiftLearnUITests.swift */,
 				055B063623B0A60C001D751B /* Info.plist */,
+				0582828D24CFFDB9009F34F6 /* 闭包.rtf */,
+				0582828824CFFDB9009F34F6 /* 枚举.rtf */,
+				0582828324CFFDB8009F34F6 /* 泛型.rtf */,
+				0582828624CFFDB9009F34F6 /* 方法.rtf */,
+				0582829424CFFDB9009F34F6 /* 类型和结构.rtf */,
+				0582829224CFFDB9009F34F6 /* 类型转换.rtf */,
+				0582828E24CFFDB9009F34F6 /* 高级运算符.rtf */,
+				0582829824CFFDBA009F34F6 /* 构造过程.rtf */,
+				0582828424CFFDB8009F34F6 /* 可选链.rtf */,
+				0582828F24CFFDB9009F34F6 /* 扩展.rtf */,
+				0582829024CFFDB9009F34F6 /* 控制流.rtf */,
+				0582828224CFFDB8009F34F6 /* 函数.rtf */,
+				0582828A24CFFDB9009F34F6 /* 基本运算符.rtf */,
+				0582828524CFFDB8009F34F6 /* 集合类型.rtf */,
+				0582829924CFFDBA009F34F6 /* 继承.rtf */,
+				0582829324CFFDB9009F34F6 /* 嵌套类型.rtf */,
+				0582829124CFFDB9009F34F6 /* 析构过程.rtf */,
+				0582828B24CFFDB9009F34F6 /* 下标.rtf */,
+				0582829524CFFDB9009F34F6 /* 协议.rtf */,
+				0582829724CFFDBA009F34F6 /* 属性.rtf */,
+				0582828924CFFDB9009F34F6 /* 字符串.rtf */,
+				0582828724CFFDB9009F34F6 /* 错误处理.rtf */,
+				0582829624CFFDBA009F34F6 /* iOS技术知识.png */,
+				0582828C24CFFDB9009F34F6 /* swift基础部分.rtf */,
 			);
 			path = HYSwiftLearnUITests;
 			sourceTree = "<group>";
@@ -306,6 +568,12 @@
 			mainGroup = 055B060623B0A60B001D751B;
 			productRefGroup = 055B061023B0A60B001D751B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 052385EE24CFFA8200350345 /* Products */;
+					ProjectRef = 052385ED24CFFA8200350345 /* HYSwiftLearn.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				055B060E23B0A60B001D751B /* HYSwiftLearn */,
@@ -331,6 +599,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0523861324CFFA8200350345 /* Info.plist in Resources */,
+				0523861B24CFFA8200350345 /* swift基础部分.rtf in Resources */,
+				0523861524CFFA8200350345 /* 集合类型.rtf in Resources */,
+				0523861924CFFA8200350345 /* 错误处理.rtf in Resources */,
+				0523862424CFFA8200350345 /* LaunchScreen.storyboard in Resources */,
+				0523862A24CFFA8200350345 /* Info.plist in Resources */,
+				0523861A24CFFA8200350345 /* Info.plist in Resources */,
+				0523861124CFFA8200350345 /* README.md in Resources */,
+				0523861624CFFA8200350345 /* 基本运算符.rtf in Resources */,
+				0523861424CFFA8200350345 /* 下标.rtf in Resources */,
+				0523861824CFFA8200350345 /* 属性.rtf in Resources */,
+				0523862524CFFA8200350345 /* Main.storyboard in Resources */,
+				0523861D24CFFA8200350345 /* Assets.xcassets in Resources */,
+				0523862924CFFA8200350345 /* MainVCSettings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +620,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058282AE24CFFDBA009F34F6 /* iOS技术知识.png in Resources */,
+				058282AF24CFFDBA009F34F6 /* 属性.rtf in Resources */,
+				058282A824CFFDBA009F34F6 /* 控制流.rtf in Resources */,
+				058282A324CFFDBA009F34F6 /* 下标.rtf in Resources */,
+				058282A124CFFDBA009F34F6 /* 字符串.rtf in Resources */,
+				058282AB24CFFDBA009F34F6 /* 嵌套类型.rtf in Resources */,
+				058282AC24CFFDBA009F34F6 /* 类型和结构.rtf in Resources */,
+				058282AD24CFFDBA009F34F6 /* 协议.rtf in Resources */,
+				058282A424CFFDBA009F34F6 /* swift基础部分.rtf in Resources */,
+				0582829E24CFFDBA009F34F6 /* 方法.rtf in Resources */,
+				058282A724CFFDBA009F34F6 /* 扩展.rtf in Resources */,
+				058282B024CFFDBA009F34F6 /* 构造过程.rtf in Resources */,
+				058282A024CFFDBA009F34F6 /* 枚举.rtf in Resources */,
+				0582829C24CFFDBA009F34F6 /* 可选链.rtf in Resources */,
+				058282B124CFFDBA009F34F6 /* 继承.rtf in Resources */,
+				058282AA24CFFDBA009F34F6 /* 类型转换.rtf in Resources */,
+				058282A924CFFDBA009F34F6 /* 析构过程.rtf in Resources */,
+				058282A524CFFDBA009F34F6 /* 闭包.rtf in Resources */,
+				058282A224CFFDBA009F34F6 /* 基本运算符.rtf in Resources */,
+				0582829B24CFFDBA009F34F6 /* 泛型.rtf in Resources */,
+				0582829D24CFFDBA009F34F6 /* 集合类型.rtf in Resources */,
+				0582829F24CFFDBA009F34F6 /* 错误处理.rtf in Resources */,
+				0582829A24CFFDBA009F34F6 /* 函数.rtf in Resources */,
+				058282A624CFFDBA009F34F6 /* 高级运算符.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +671,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0523862724CFFA8200350345 /* AppDelegate.swift in Sources */,
+				0523862824CFFA8200350345 /* MainViewController.swift in Sources */,
 				055B062A23B0A60C001D751B /* HYSwiftLearnTests.swift in Sources */,
+				0523862024CFFA8200350345 /* ReleaseViewController.swift in Sources */,
+				0523861724CFFA8200350345 /* HYSwiftLearnTests.swift in Sources */,
+				0523862224CFFA8200350345 /* SwiftCamBtn.swift in Sources */,
+				0523861224CFFA8200350345 /* HYSwiftLearnUITests.swift in Sources */,
+				0523862324CFFA8200350345 /* CamButton.swift in Sources */,
+				0523862624CFFA8200350345 /* ProfileViewController.swift in Sources */,
+				0523861C24CFFA8200350345 /* HomeViewController.swift in Sources */,
+				0523861F24CFFA8200350345 /* MessageViewController.swift in Sources */,
+				0523861E24CFFA8200350345 /* DiscoverViewController.swift in Sources */,
+				0523862124CFFA8200350345 /* CamptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +711,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		052385FE24CFFA8200350345 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052385FF24CFFA8200350345 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0523860024CFFA8200350345 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0523860124CFFA8200350345 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		055B061823B0A60B001D751B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
