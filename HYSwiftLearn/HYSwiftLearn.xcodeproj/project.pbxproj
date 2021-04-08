@@ -33,12 +33,15 @@
 		0523862824CFFA8200350345 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523860624CFFA8200350345 /* MainViewController.swift */; };
 		0523862924CFFA8200350345 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0523860824CFFA8200350345 /* MainVCSettings.json */; };
 		0523862A24CFFA8200350345 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0523860924CFFA8200350345 /* Info.plist */; };
+		05477D11257E29AB00161099 /* HYSwiftLearnPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05477D10257E29AB00161099 /* HYSwiftLearnPreference.swift */; };
+		0558DDB02567DAF400D324BF /* HYCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558DDAF2567DAF400D324BF /* HYCameraManager.swift */; };
 		055B061323B0A60B001D751B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B061223B0A60B001D751B /* AppDelegate.swift */; };
 		055B061A23B0A60B001D751B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055B061823B0A60B001D751B /* Main.storyboard */; };
 		055B061C23B0A60C001D751B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055B061B23B0A60C001D751B /* Assets.xcassets */; };
 		055B061F23B0A60C001D751B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055B061D23B0A60C001D751B /* LaunchScreen.storyboard */; };
 		055B062A23B0A60C001D751B /* HYSwiftLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B062923B0A60C001D751B /* HYSwiftLearnTests.swift */; };
 		055B063523B0A60C001D751B /* HYSwiftLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B063423B0A60C001D751B /* HYSwiftLearnUITests.swift */; };
+		05633396258C862B0028CAFB /* HYCustomCamptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05633395258C862A0028CAFB /* HYCustomCamptureVC.swift */; };
 		0582829A24CFFDBA009F34F6 /* 函数.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828224CFFDB8009F34F6 /* 函数.rtf */; };
 		0582829B24CFFDBA009F34F6 /* 泛型.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828324CFFDB8009F34F6 /* 泛型.rtf */; };
 		0582829C24CFFDBA009F34F6 /* 可选链.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0582828424CFFDB8009F34F6 /* 可选链.rtf */; };
@@ -73,6 +76,10 @@
 		0590B7C324728BAE00092CAB /* CamptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7C224728BAE00092CAB /* CamptureViewController.swift */; };
 		0590B7C62472943B00092CAB /* CamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7C52472943B00092CAB /* CamButton.swift */; };
 		0590B7C82472B5EE00092CAB /* SwiftCamBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B7C72472B5EE00092CAB /* SwiftCamBtn.swift */; };
+		05B74C5F24E27E4900FF3456 /* HYSwiftCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B74C5E24E27E4900FF3456 /* HYSwiftCameraVC.swift */; };
+		05B74C6124E2856400FF3456 /* HYPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B74C6024E2856400FF3456 /* HYPreviewView.swift */; };
+		05B74C6324E2967F00FF3456 /* HYOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B74C6224E2967F00FF3456 /* HYOrientation.swift */; };
+		05B74C6524E29E9100FF3456 /* HYSwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B74C6424E29E9100FF3456 /* HYSwiftyCamViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +127,8 @@
 		0523860624CFFA8200350345 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0523860824CFFA8200350345 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		0523860924CFFA8200350345 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05477D10257E29AB00161099 /* HYSwiftLearnPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYSwiftLearnPreference.swift; sourceTree = "<group>"; };
+		0558DDAF2567DAF400D324BF /* HYCameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCameraManager.swift; sourceTree = "<group>"; };
 		055B060F23B0A60B001D751B /* HYSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055B061223B0A60B001D751B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		055B061923B0A60B001D751B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +141,7 @@
 		055B063023B0A60C001D751B /* HYSwiftLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYSwiftLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055B063423B0A60C001D751B /* HYSwiftLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYSwiftLearnUITests.swift; sourceTree = "<group>"; };
 		055B063623B0A60C001D751B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05633395258C862A0028CAFB /* HYCustomCamptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCustomCamptureVC.swift; sourceTree = "<group>"; };
 		0582828224CFFDB8009F34F6 /* 函数.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "函数.rtf"; sourceTree = "<group>"; };
 		0582828324CFFDB8009F34F6 /* 泛型.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "泛型.rtf"; sourceTree = "<group>"; };
 		0582828424CFFDB8009F34F6 /* 可选链.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "可选链.rtf"; sourceTree = "<group>"; };
@@ -166,6 +176,10 @@
 		0590B7C224728BAE00092CAB /* CamptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamptureViewController.swift; sourceTree = "<group>"; };
 		0590B7C52472943B00092CAB /* CamButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamButton.swift; sourceTree = "<group>"; };
 		0590B7C72472B5EE00092CAB /* SwiftCamBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCamBtn.swift; sourceTree = "<group>"; };
+		05B74C5E24E27E4900FF3456 /* HYSwiftCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYSwiftCameraVC.swift; sourceTree = "<group>"; };
+		05B74C6024E2856400FF3456 /* HYPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYPreviewView.swift; sourceTree = "<group>"; };
+		05B74C6224E2967F00FF3456 /* HYOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYOrientation.swift; sourceTree = "<group>"; };
+		05B74C6424E29E9100FF3456 /* HYSwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYSwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +373,7 @@
 				0590B7AB24725FEC00092CAB /* Home */,
 				0590B7A924725FD300092CAB /* Main */,
 				055B061223B0A60B001D751B /* AppDelegate.swift */,
+				05477D10257E29AB00161099 /* HYSwiftLearnPreference.swift */,
 				055B061823B0A60B001D751B /* Main.storyboard */,
 				055B061B23B0A60C001D751B /* Assets.xcassets */,
 				055B061D23B0A60C001D751B /* LaunchScreen.storyboard */,
@@ -447,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				0590B7B7247262E900092CAB /* ProfileViewController.swift */,
+				0558DDAF2567DAF400D324BF /* HYCameraManager.swift */,
 			);
 			path = Prolifle;
 			sourceTree = "<group>";
@@ -464,7 +480,12 @@
 			children = (
 				0590B7C42472940000092CAB /* CamtrueToos */,
 				0590B7BE24726EF500092CAB /* ReleaseViewController.swift */,
+				05B74C6224E2967F00FF3456 /* HYOrientation.swift */,
+				05B74C6424E29E9100FF3456 /* HYSwiftyCamViewControllerDelegate.swift */,
+				05B74C6024E2856400FF3456 /* HYPreviewView.swift */,
+				05B74C5E24E27E4900FF3456 /* HYSwiftCameraVC.swift */,
 				0590B7C224728BAE00092CAB /* CamptureViewController.swift */,
+				05633395258C862A0028CAFB /* HYCustomCamptureVC.swift */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -655,14 +676,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0590B7C62472943B00092CAB /* CamButton.swift in Sources */,
+				0558DDB02567DAF400D324BF /* HYCameraManager.swift in Sources */,
+				05B74C5F24E27E4900FF3456 /* HYSwiftCameraVC.swift in Sources */,
 				0590B7B8247262E900092CAB /* ProfileViewController.swift in Sources */,
 				0590B7BF24726EF500092CAB /* ReleaseViewController.swift in Sources */,
 				055B061323B0A60B001D751B /* AppDelegate.swift in Sources */,
+				05477D11257E29AB00161099 /* HYSwiftLearnPreference.swift in Sources */,
+				05633396258C862B0028CAFB /* HYCustomCamptureVC.swift in Sources */,
 				0590B7C82472B5EE00092CAB /* SwiftCamBtn.swift in Sources */,
+				05B74C6524E29E9100FF3456 /* HYSwiftyCamViewControllerDelegate.swift in Sources */,
 				0590B7B02472605800092CAB /* MainViewController.swift in Sources */,
 				0590B7B4247262C500092CAB /* MessageViewController.swift in Sources */,
+				05B74C6124E2856400FF3456 /* HYPreviewView.swift in Sources */,
 				0590B7B2247262B300092CAB /* HomeViewController.swift in Sources */,
 				0590B7B6247262D300092CAB /* DiscoverViewController.swift in Sources */,
+				05B74C6324E2967F00FF3456 /* HYOrientation.swift in Sources */,
 				0590B7C324728BAE00092CAB /* CamptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

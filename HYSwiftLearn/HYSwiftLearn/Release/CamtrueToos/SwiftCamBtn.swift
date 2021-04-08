@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class SwiftCamBtn: CamButton
 {
     private var circleBorder: CALayer!
@@ -23,10 +24,10 @@ class SwiftCamBtn: CamButton
            drawButton()
        }
        
-       private func drawButton() {
+       private func drawButton()
+       {
            self.backgroundColor = UIColor.clear
-           
-          circleBorder = CALayer()
+           circleBorder = CALayer()
            circleBorder.backgroundColor = UIColor.clear.cgColor
            circleBorder.borderWidth = 6.0
            circleBorder.borderColor = UIColor.white.cgColor
@@ -34,7 +35,6 @@ class SwiftCamBtn: CamButton
            circleBorder.position = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
            circleBorder.cornerRadius = self.frame.size.width / 2
            layer.insertSublayer(circleBorder, at: 0)
-
        }
        
        public  func growButton() {
@@ -49,12 +49,10 @@ class SwiftCamBtn: CamButton
                self.innerCircle.transform = CGAffineTransform(scaleX: 62.4, y: 62.4)
                self.circleBorder.setAffineTransform(CGAffineTransform(scaleX: 1.352, y: 1.352))
                self.circleBorder.borderWidth = (6 / 1.352)
-
            }, completion: nil)
        }
-       
     
-    
+           
     
        public func shrinkButton() {
            UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {

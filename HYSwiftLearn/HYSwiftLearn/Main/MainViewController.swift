@@ -115,7 +115,7 @@ extension MainViewController : UITabBarControllerDelegate
 //            let navigationModalController = UINavigationController(rootViewController: PresentViewController)
 //            present(navigationModalController, animated: true)
             
-            let vc = CamptureViewController()
+            let vc = HYCustomCamptureVC()
             let navigationModalController = UINavigationController(rootViewController: vc)
             navigationModalController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
             navigationModalController.navigationBar.isHidden = true
@@ -127,7 +127,6 @@ extension MainViewController : UITabBarControllerDelegate
             
         }
     }
-
 
 }
 

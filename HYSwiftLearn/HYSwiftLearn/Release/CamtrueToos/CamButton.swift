@@ -26,7 +26,8 @@ public protocol CamButtonDelegate : class
      func setMaxiumVideoDuration() -> Double
 }
 
-open class CamButton: UIButton {
+open class CamButton: UIButton
+{
 
     public weak var delegate: CamButtonDelegate?
     
